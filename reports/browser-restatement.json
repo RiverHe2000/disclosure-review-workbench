@@ -1,0 +1,22 @@
+{
+  "fields_reset": [
+    "value",
+    "period",
+    "entity_scope",
+    "basis",
+    "observation",
+    "candidate_id"
+  ],
+  "non_changes_preserve": [
+    "expand_original_notes",
+    "show_all_candidates",
+    "same_numeric_value",
+    "numeric_format_only",
+    "reason_only",
+    "same_candidate"
+  ],
+  "changed_context_submits_confirmation": false,
+  "explicit_reconfirmation_submits_confirmation": true,
+  "browser_errors": [],
+  "production_mutations": 0
+}

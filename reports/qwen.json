@@ -1,0 +1,4972 @@
+{
+  "generated_at": "2026-09-18T09:10:47.887256+00:00",
+  "method": "qwen",
+  "parser_version": "native-rows-v3",
+  "rules_version": "native-rules-v1",
+  "requested_documents": 12,
+  "requested_fields": 60,
+  "missing_documents": [],
+  "source_label_method": "AI-assisted direct source verification; no independent human study",
+  "notes": [
+    "All extracted values require manual review; this benchmark scores draft extraction.",
+    "Fields within reports are dependent; counts are pilot observations, not population guarantees.",
+    "Evidence existence does not establish correct column, period or regulatory scope.",
+    "Complete-tuple scoring additionally requires a labelled source page; correct alternative citations may be undercounted.",
+    "Timing includes fresh PDF parsing. Model calls are uncached. Initial model load is included in first document.",
+    "Scores were recomputed from recorded predictions; original model outputs and execution timings were preserved. The scorer checks restatement and source precision."
+  ],
+  "summary": {
+    "requested_fields": 60,
+    "source_verified_labels": 58,
+    "predictions": 50,
+    "value_correct": 46,
+    "context_labelled": 55,
+    "complete_fact_correct": 5,
+    "gold_page_candidate_hits": 57,
+    "predictions_with_evidence": 48,
+    "incorrect_nonempty_predictions": 2,
+    "automatically_accepted": 0
+  },
+  "by_split": {
+    "development": {
+      "requested_fields": 30,
+      "source_verified_labels": 30,
+      "predictions": 25,
+      "value_correct": 23,
+      "context_labelled": 30,
+      "complete_fact_correct": 4,
+      "gold_page_candidate_hits": 29,
+      "predictions_with_evidence": 25,
+      "incorrect_nonempty_predictions": 2,
+      "automatically_accepted": 0
+    },
+    "temporal_test": {
+      "requested_fields": 15,
+      "source_verified_labels": 13,
+      "predictions": 11,
+      "value_correct": 9,
+      "context_labelled": 13,
+      "complete_fact_correct": 1,
+      "gold_page_candidate_hits": 13,
+      "predictions_with_evidence": 9,
+      "incorrect_nonempty_predictions": 0,
+      "automatically_accepted": 0
+    },
+    "bank_test": {
+      "requested_fields": 15,
+      "source_verified_labels": 15,
+      "predictions": 14,
+      "value_correct": 14,
+      "context_labelled": 12,
+      "complete_fact_correct": 0,
+      "gold_page_candidate_hits": 15,
+      "predictions_with_evidence": 14,
+      "incorrect_nonempty_predictions": 0,
+      "automatically_accepted": 0
+    }
+  },
+  "runs": [
+    {
+      "document_id": "cba_2023",
+      "split": "development",
+      "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+      "sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+      "candidate_count": 43,
+      "parse_seconds": 8.836,
+      "elapsed_seconds": 66.24,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_6dd3bd18eb388f271968749d\",\n  \"raw_value\": 12.2,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1992,
+            "output_tokens": 103,
+            "elapsed_seconds": 6.533
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_51937be3344e45e7d7705024\",\n  \"raw_value\": 20.0,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 893,
+            "output_tokens": 105,
+            "elapsed_seconds": 5.612
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_758a4382c5b36f79173586cd\",\n  \"raw_value\": 467992,\n  \"raw_unit\": \"AUD_million\",\n  \"period\": \"2023-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2524,
+            "output_tokens": 109,
+            "elapsed_seconds": 8.213
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_1a4b13d9add2dc04f16f1281\",\n  \"raw_value\": 131,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2694,
+            "output_tokens": 101,
+            "elapsed_seconds": 18.775
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_437ff8e82ac5908b17d79530\",\n  \"raw_value\": 131,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2130,
+            "output_tokens": 103,
+            "elapsed_seconds": 7.003
+          }
+        ],
+        "elapsed_seconds": 46.136,
+        "input_tokens": 10233,
+        "output_tokens": 521,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "cba_2024",
+      "split": "development",
+      "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+      "sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f",
+      "candidate_count": 43,
+      "parse_seconds": 12.35,
+      "elapsed_seconds": 62.99,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_555745ad0b4d00a613a40702\",\n  \"raw_value\": 12.3,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1858,
+            "output_tokens": 105,
+            "elapsed_seconds": 6.181
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_aab9aaa4168f2c093b101294\",\n  \"raw_value\": 20.9,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1646,
+            "output_tokens": 102,
+            "elapsed_seconds": 5.449
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_219dac77f7e9a281cd65fc4a\",\n  \"raw_value\": 467551,\n  \"raw_unit\": \"AUD_million\",\n  \"period\": \"2024-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2083,
+            "output_tokens": 106,
+            "elapsed_seconds": 6.449
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_812f375edd69758c24596f05\",\n  \"raw_value\": 136,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 3380,
+            "output_tokens": 102,
+            "elapsed_seconds": 25.631
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_4e931f3f164f40f549d9d485\",\n  \"raw_value\": 116,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2266,
+            "output_tokens": 105,
+            "elapsed_seconds": 6.881
+          }
+        ],
+        "elapsed_seconds": 50.591,
+        "input_tokens": 11233,
+        "output_tokens": 520,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "cba_2025",
+      "split": "temporal_test",
+      "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+      "sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf",
+      "candidate_count": 36,
+      "parse_seconds": 22.777,
+      "elapsed_seconds": 74.687,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_5678386c8bbc77f008e8f5fe\",\n  \"raw_value\": 12.3,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2779,
+            "output_tokens": 103,
+            "elapsed_seconds": 18.786
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_3503bede5aba11414df8a74f\",\n  \"raw_value\": 20.9,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1065,
+            "output_tokens": 101,
+            "elapsed_seconds": 4.951
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_a6489ed558876f7d595bb231\",\n  \"raw_value\": null,\n  \"raw_unit\": \"unknown\",\n  \"period\": null,\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"unknown\",\n  \"restated\": false\n}",
+            "input_tokens": 1872,
+            "output_tokens": 87,
+            "elapsed_seconds": 5.0
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_b17e332e4224bd111bc74837\",\n  \"raw_value\": 130,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2298,
+            "output_tokens": 101,
+            "elapsed_seconds": 6.71
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_65f57152d870ed9fb7cba293\",\n  \"raw_value\": 115,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-06-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2559,
+            "output_tokens": 101,
+            "elapsed_seconds": 16.42
+          }
+        ],
+        "elapsed_seconds": 51.867,
+        "input_tokens": 10573,
+        "output_tokens": 493,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "westpac_2023",
+      "split": "development",
+      "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+      "sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239",
+      "candidate_count": 160,
+      "parse_seconds": 14.502,
+      "elapsed_seconds": 100.131,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_ede423d1f8a47d49a531d28f\",\n  \"raw_value\": 12.38,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2887,
+            "output_tokens": 105,
+            "elapsed_seconds": 20.381
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_6a4041e40fabb94b624352f1\",\n  \"raw_value\": 29.87,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2503,
+            "output_tokens": 105,
+            "elapsed_seconds": 7.269
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_b7337e33d7d4a1ab8c10d3f8\",\n  \"raw_value\": 451418,\n  \"raw_unit\": \"AUD_million\",\n  \"period\": \"2023-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2773,
+            "output_tokens": 108,
+            "elapsed_seconds": 19.424
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_4796dab44f0e43d7fdafe942\",\n  \"raw_value\": 134,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 3022,
+            "output_tokens": 101,
+            "elapsed_seconds": 21.445
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_0b4a31ec5b712f1dc3621f77\",\n  \"raw_value\": 115,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2606,
+            "output_tokens": 103,
+            "elapsed_seconds": 17.049
+          }
+        ],
+        "elapsed_seconds": 85.568,
+        "input_tokens": 13791,
+        "output_tokens": 522,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "westpac_2024",
+      "split": "development",
+      "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+      "sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1",
+      "candidate_count": 139,
+      "parse_seconds": 12.996,
+      "elapsed_seconds": 127.24,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_461e41cc683ebbe17a98f275\",\n  \"raw_value\": 12.49,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2847,
+            "output_tokens": 104,
+            "elapsed_seconds": 20.118
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_1fa6b43403474224100698a9\",\n  \"raw_value\": 21.38,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 3130,
+            "output_tokens": 106,
+            "elapsed_seconds": 22.817
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_bff0b31115f8d2d27461b191\",\n  \"raw_value\": 437430,\n  \"raw_unit\": \"AUD_million\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 3398,
+            "output_tokens": 108,
+            "elapsed_seconds": 28.717
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_f492beca6f6dbc3c25cb5704\",\n  \"raw_value\": 133,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2951,
+            "output_tokens": 98,
+            "elapsed_seconds": 21.497
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_c12a3ed728173819f1a5b1fe\",\n  \"raw_value\": 112,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2914,
+            "output_tokens": 102,
+            "elapsed_seconds": 21.04
+          }
+        ],
+        "elapsed_seconds": 114.189,
+        "input_tokens": 15240,
+        "output_tokens": 518,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "westpac_2025",
+      "split": "temporal_test",
+      "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+      "sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4",
+      "candidate_count": 83,
+      "parse_seconds": 11.217,
+      "elapsed_seconds": 55.727,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_8402f076a1960edda5dc7a8c\",\n  \"raw_value\": 12.5,\n  \"raw_unit\": \"percent\",\n  \"period\": \"unknown\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2237,
+            "output_tokens": 94,
+            "elapsed_seconds": 6.617
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_74f4734b88b2e1f3dd7821f2\",\n  \"raw_value\": 17,\n  \"raw_unit\": \"percent\",\n  \"period\": null,\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2134,
+            "output_tokens": 93,
+            "elapsed_seconds": 5.915
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_71dba7c74a8d4979bec55eaf\",\n  \"raw_value\": 6250,\n  \"raw_unit\": \"AUD_million\",\n  \"period\": \"2025-10-15\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2271,
+            "output_tokens": 103,
+            "elapsed_seconds": 6.824
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_abe74c1c933f6352a7913a54\",\n  \"raw_value\": 137,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2679,
+            "output_tokens": 102,
+            "elapsed_seconds": 18.176
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_a492f87fc3f8633da39ac196\",\n  \"raw_value\": 137,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2433,
+            "output_tokens": 100,
+            "elapsed_seconds": 6.935
+          }
+        ],
+        "elapsed_seconds": 44.467,
+        "input_tokens": 11754,
+        "output_tokens": 492,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "anz_2023",
+      "split": "development",
+      "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+      "sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361",
+      "candidate_count": 68,
+      "parse_seconds": 6.773,
+      "elapsed_seconds": 93.166,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_a99b502bf5c5fd84e967076d\",\n  \"raw_value\": 13.3,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-10-01\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 3242,
+            "output_tokens": 103,
+            "elapsed_seconds": 24.873
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_2d712578db5c1aebdee5a1ff\",\n  \"raw_value\": 21.0,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2301,
+            "output_tokens": 101,
+            "elapsed_seconds": 6.922
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_f34a52dcc037b8ecf3b654d8\",\n  \"raw_value\": 433.3,\n  \"raw_unit\": \"AUD_billion\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2767,
+            "output_tokens": 105,
+            "elapsed_seconds": 19.496
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_6b5e13360e63b91568ee1758\",\n  \"raw_value\": 130,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"year_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2536,
+            "output_tokens": 103,
+            "elapsed_seconds": 17.065
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_baae15154a02e7f1de6f8701\",\n  \"raw_value\": 116,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2660,
+            "output_tokens": 102,
+            "elapsed_seconds": 17.999
+          }
+        ],
+        "elapsed_seconds": 86.355,
+        "input_tokens": 13506,
+        "output_tokens": 514,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "anz_2024",
+      "split": "development",
+      "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+      "sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a",
+      "candidate_count": 65,
+      "parse_seconds": 9.428,
+      "elapsed_seconds": 91.54,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_ef5a03d93d6d705533db0bb5\",\n  \"raw_value\": 12.2,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 3602,
+            "output_tokens": 102,
+            "elapsed_seconds": 30.693
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_4f3f19236cf2ef592e7e2b81\",\n  \"raw_value\": 20.6,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2207,
+            "output_tokens": 104,
+            "elapsed_seconds": 6.88
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_ed3f59884df1bb2f5ab748bd\",\n  \"raw_value\": 446.6,\n  \"raw_unit\": \"AUD_billion\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2465,
+            "output_tokens": 103,
+            "elapsed_seconds": 7.256
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_7cce8c78e5b9f04d2873adde\",\n  \"raw_value\": 133,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-01-01\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"year_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2662,
+            "output_tokens": 100,
+            "elapsed_seconds": 17.851
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_efb9355c15305cb9d43cd9f8\",\n  \"raw_value\": 116,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"year_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2773,
+            "output_tokens": 100,
+            "elapsed_seconds": 19.392
+          }
+        ],
+        "elapsed_seconds": 82.072,
+        "input_tokens": 13709,
+        "output_tokens": 509,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "anz_2025",
+      "split": "temporal_test",
+      "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+      "sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442",
+      "candidate_count": 55,
+      "parse_seconds": 13.743,
+      "elapsed_seconds": 93.141,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_ca39848d7ffd12f921335e17\",\n  \"raw_value\": 12.0,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 3414,
+            "output_tokens": 102,
+            "elapsed_seconds": 26.689
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_3c0e06f3ca92f56ad49bba42\",\n  \"raw_value\": 21.0,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2201,
+            "output_tokens": 103,
+            "elapsed_seconds": 6.675
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_28f792de7d1586fb36df1331\",\n  \"raw_value\": 458547,\n  \"raw_unit\": \"AUD_million\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2277,
+            "output_tokens": 107,
+            "elapsed_seconds": 6.968
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_c18e349a5488366ff7f29850\",\n  \"raw_value\": 132,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-01-01\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"year_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2640,
+            "output_tokens": 102,
+            "elapsed_seconds": 17.637
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_601060ca3fb94b378dae1887\",\n  \"raw_value\": 115,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2941,
+            "output_tokens": 101,
+            "elapsed_seconds": 21.388
+          }
+        ],
+        "elapsed_seconds": 79.357,
+        "input_tokens": 13473,
+        "output_tokens": 515,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "nab_2023",
+      "split": "bank_test",
+      "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+      "sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a",
+      "candidate_count": 80,
+      "parse_seconds": 12.747,
+      "elapsed_seconds": 72.904,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_3393e387db058b647b842c88\",\n  \"raw_value\": 12.22,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2817,
+            "output_tokens": 106,
+            "elapsed_seconds": 20.816
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_9528b0ac68309014415f3d73\",\n  \"raw_value\": 19.88,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1964,
+            "output_tokens": 106,
+            "elapsed_seconds": 6.282
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_8ef7f2821c722e93add23e24\",\n  \"raw_value\": null,\n  \"raw_unit\": \"unknown\",\n  \"period\": null,\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2859,
+            "output_tokens": 89,
+            "elapsed_seconds": 19.914
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_02c04aee8f45da95302421b7\",\n  \"raw_value\": 140,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2287,
+            "output_tokens": 103,
+            "elapsed_seconds": 7.096
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_dce6b93a9d11b723773d42c4\",\n  \"raw_value\": 116,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2023-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1785,
+            "output_tokens": 103,
+            "elapsed_seconds": 6.01
+          }
+        ],
+        "elapsed_seconds": 60.118,
+        "input_tokens": 11712,
+        "output_tokens": 507,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "nab_2024",
+      "split": "bank_test",
+      "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+      "sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b",
+      "candidate_count": 82,
+      "parse_seconds": 16.328,
+      "elapsed_seconds": 61.686,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_7ca4973b8e0ecacddb2a52c0\",\n  \"raw_value\": 12.35,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2482,
+            "output_tokens": 102,
+            "elapsed_seconds": 7.504
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_96324d8e1b152790c6b8567a\",\n  \"raw_value\": 20.92,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1270,
+            "output_tokens": 107,
+            "elapsed_seconds": 5.376
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_4b094236e94e0ca27090fc7c\",\n  \"raw_value\": 413.9,\n  \"raw_unit\": \"AUD_billion\",\n  \"period\": \"2024-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"reported\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2807,
+            "output_tokens": 103,
+            "elapsed_seconds": 20.116
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_30a0641aaa40b6100a024d38\",\n  \"raw_value\": 137,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"reported\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2298,
+            "output_tokens": 98,
+            "elapsed_seconds": 6.407
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_7eccd5807366b760273776e1\",\n  \"raw_value\": 117,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2024-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1879,
+            "output_tokens": 103,
+            "elapsed_seconds": 5.919
+          }
+        ],
+        "elapsed_seconds": 45.322,
+        "input_tokens": 10736,
+        "output_tokens": 513,
+        "cached": false
+      }
+    },
+    {
+      "document_id": "nab_2025",
+      "split": "bank_test",
+      "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+      "sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+      "candidate_count": 69,
+      "parse_seconds": 13.626,
+      "elapsed_seconds": 78.369,
+      "model": {
+        "model_path": "D:/models/Qwen3-4B-Instruct-2507",
+        "model_fingerprint": "da9e27b80d5af88a",
+        "prompt_version": "candidate-selection-v2",
+        "calls": [
+          {
+            "metric_id": "cet1_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_02e7bb4c41ad98b0bd47b23a\",\n  \"raw_value\": 11.70,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2763,
+            "output_tokens": 104,
+            "elapsed_seconds": 20.871
+          },
+          {
+            "metric_id": "total_capital_ratio",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_8c2e0405cc3b325a36a729c0\",\n  \"raw_value\": 20.32,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1303,
+            "output_tokens": 106,
+            "elapsed_seconds": 6.025
+          },
+          {
+            "metric_id": "rwa",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_3437289ad491115695b5e888\",\n  \"raw_value\": 440.6,\n  \"raw_unit\": \"AUD_billion\",\n  \"period\": \"2025-12-31\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"reported\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 2894,
+            "output_tokens": 104,
+            "elapsed_seconds": 23.192
+          },
+          {
+            "metric_id": "lcr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_19d67b9c066840ef2f8a2861\",\n  \"raw_value\": 135,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"quarter_average\",\n  \"restated\": false\n}",
+            "input_tokens": 2325,
+            "output_tokens": 103,
+            "elapsed_seconds": 8.733
+          },
+          {
+            "metric_id": "nsfr",
+            "attempt": 1,
+            "response": "{\n  \"candidate_id\": \"c_3f6747eb1f3bd21d7a7841f6\",\n  \"raw_value\": 116,\n  \"raw_unit\": \"percent\",\n  \"period\": \"2025-09-30\",\n  \"entity_scope\": \"Group\",\n  \"basis\": \"APRA Level 2\",\n  \"observation\": \"point_in_time\",\n  \"restated\": false\n}",
+            "input_tokens": 1576,
+            "output_tokens": 103,
+            "elapsed_seconds": 5.875
+          }
+        ],
+        "elapsed_seconds": 64.696,
+        "input_tokens": 10861,
+        "output_tokens": 520,
+        "cached": false
+      }
+    }
+  ],
+  "rows": [
+    {
+      "document_id": "cba_2023",
+      "split": "development",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2023",
+        "metric_id": "cet1_ratio",
+        "value": 12.2,
+        "unit": "percent",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 289,
+        "evidence_quote": "Capital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.2",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+        "source_pdf_sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "12.2",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          289
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2023",
+        "metric_id": "cet1_ratio",
+        "value": 12.2,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_6dd3bd18eb388f271968749d",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_6dd3bd18eb388f271968749d",
+        "page": 52,
+        "bbox": [
+          56.69,
+          580.49,
+          486.99,
+          625.28
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Common Equity Tier 1 (CET1) capital ratio 12.2% $1,108m 1.64% APRA (Level 2)"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2023",
+      "split": "development",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 20.0,
+        "unit": "percent",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 289,
+        "evidence_quote": "Capital adequacy – Total – Basel III (APRA) (%) 20.0",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+        "source_pdf_sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "20.0",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          289
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 20.0,
+        "unit": "percent",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_51937be3344e45e7d7705024",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_51937be3344e45e7d7705024",
+        "page": 289,
+        "bbox": [
+          58.9,
+          359.18,
+          539.98,
+          367.72
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Capital adequacy – Total – Basel III (APRA) (%) 20.0 17.6 19.8 17.5 15.5"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": true,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2023",
+      "split": "development",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2023",
+        "metric_id": "rwa",
+        "value": 467992,
+        "unit": "AUD_million",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 287,
+        "evidence_quote": "Risk weighted assets – Basel III (APRA) 467,992",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+        "source_pdf_sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "467,992",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          287
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2023",
+        "metric_id": "rwa",
+        "value": 467992,
+        "unit": "AUD_million",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_758a4382c5b36f79173586cd",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_758a4382c5b36f79173586cd",
+        "page": 287,
+        "bbox": [
+          58.72,
+          551.07,
+          540.27,
+          559.62
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Risk weighted assets – Basel III (APRA) 467,992 497,892 450,680 454,948 452,762"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": true,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2023",
+      "split": "development",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2023",
+        "metric_id": "lcr",
+        "value": 131,
+        "unit": "percent",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 57,
+        "evidence_quote": "The Group’s average LCR for the quarter ended 30 June 2023 was 131%",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+        "source_pdf_sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "131",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          57
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2023",
+        "metric_id": "lcr",
+        "value": 131,
+        "unit": "percent",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "quarter_average",
+        "restated": false,
+        "candidate_id": "c_1a4b13d9add2dc04f16f1281",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_1a4b13d9add2dc04f16f1281",
+        "page": 57,
+        "bbox": [
+          367.32,
+          593.51,
+          531.94,
+          623.0
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "The Group’s average LCR for the quarter ended 30 June 2023 was 131% which was significantly above the minimum regulatory"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2023",
+      "split": "development",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2023",
+        "metric_id": "nsfr",
+        "value": 124,
+        "unit": "percent",
+        "period": "2023-06-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 57,
+        "evidence_quote": "The Group’s NSFR as at 30 June 2023 was 124%",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+        "source_pdf_sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "124",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          57
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2023",
+        "metric_id": "nsfr",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "cba_2024",
+      "split": "development",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.3,
+        "unit": "percent",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 311,
+        "evidence_quote": "Capital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.3",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+        "source_pdf_sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "12.3",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          311
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.3,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_555745ad0b4d00a613a40702",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_555745ad0b4d00a613a40702",
+        "page": 62,
+        "bbox": [
+          56.69,
+          571.27,
+          487.49,
+          621.73
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Common Equity Tier 1 capital ratio 12.3% $802m 1.66% APRA (Level 2)"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": false,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2024",
+      "split": "development",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 20.9,
+        "unit": "percent",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 311,
+        "evidence_quote": "Capital adequacy – Total – Basel III (APRA) (%) 20.9",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+        "source_pdf_sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "20.9",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          311
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 20.9,
+        "unit": "percent",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_aab9aaa4168f2c093b101294",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_aab9aaa4168f2c093b101294",
+        "page": 311,
+        "bbox": [
+          56.64,
+          382.87,
+          534.83,
+          391.31
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Capital adequacy – Total – Basel III (APRA) (%) 20.9 20.0 17.6 19.8 17.5"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": true,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2024",
+      "split": "development",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2024",
+        "metric_id": "rwa",
+        "value": 467551,
+        "unit": "AUD_million",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 309,
+        "evidence_quote": "Risk weighted assets – Basel III (APRA) 467,551",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+        "source_pdf_sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "467,551",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          309
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2024",
+        "metric_id": "rwa",
+        "value": 467551,
+        "unit": "AUD_million",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_219dac77f7e9a281cd65fc4a",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_219dac77f7e9a281cd65fc4a",
+        "page": 309,
+        "bbox": [
+          56.64,
+          551.21,
+          534.82,
+          559.66
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Risk weighted assets – Basel III (APRA) 467,551 467,992 497,892 450,680 454,948"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": true,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2024",
+      "split": "development",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2024",
+        "metric_id": "lcr",
+        "value": 136,
+        "unit": "percent",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 67,
+        "evidence_quote": "The Group’s average LCR for the quarter ended 30 June 2024 was 136%",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+        "source_pdf_sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "136",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          67
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2024",
+        "metric_id": "lcr",
+        "value": 136,
+        "unit": "percent",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "quarter_average",
+        "restated": false,
+        "candidate_id": "c_812f375edd69758c24596f05",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_812f375edd69758c24596f05",
+        "page": 311,
+        "bbox": [
+          56.64,
+          411.3,
+          534.83,
+          419.75
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Liquidity Coverage Ratio – \"Quarterly average\" (%) 136 131 130 129 155"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2024",
+      "split": "development",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2024",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2024-06-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 67,
+        "evidence_quote": "The Group’s NSFR as at 30 June 2024 was 116%",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+        "source_pdf_sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "116",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          67
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2024",
+        "metric_id": "nsfr",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "cba_2025",
+      "split": "temporal_test",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2025",
+        "metric_id": "cet1_ratio",
+        "value": 12.3,
+        "unit": "percent",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 16,
+        "evidence_quote": "a Common Equity Tier 1 (CET1) capital ratio of 12.3% as at 30 June 2025",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+        "source_pdf_sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "12.3",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          16
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2025",
+        "metric_id": "cet1_ratio",
+        "value": 12.3,
+        "unit": "percent",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_5678386c8bbc77f008e8f5fe",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_5678386c8bbc77f008e8f5fe",
+        "page": 16,
+        "bbox": [
+          776.69,
+          255.83,
+          1116.53,
+          264.33
+        ],
+        "page_width": 1190.55,
+        "page_height": 841.89,
+        "text": "a Common Equity Tier 1 (CET1) capital ratio of 12.3% as at 30 June 2025, well in excess"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": true,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2025",
+      "split": "temporal_test",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 20.9,
+        "unit": "percent",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 195,
+        "evidence_quote": "Capital adequacy – Total – Basel III (APRA) (%) 20.9",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+        "source_pdf_sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "20.9",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          195
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 20.9,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_3503bede5aba11414df8a74f",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_3503bede5aba11414df8a74f",
+        "page": 195,
+        "bbox": [
+          654.07,
+          368.01,
+          1132.14,
+          377.04
+        ],
+        "page_width": 1190.55,
+        "page_height": 841.89,
+        "text": "Capital adequacy – Total ier 2 – – Basel Basel III I (APRA) (APRA) (%) 20.9 70 20.9 66 20.0 55 17.6 40 19.8 41"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "cba_2025",
+      "split": "temporal_test",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2025",
+        "metric_id": "rwa",
+        "value": 496145,
+        "unit": "AUD_million",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 194,
+        "evidence_quote": "Risk weighted assets – Basel III (APRA) 496,145",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+        "source_pdf_sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "496,145",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          194
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2025",
+        "metric_id": "rwa",
+        "value": null,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "No supported current-period value selected"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "cba_2025",
+      "split": "temporal_test",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2025",
+        "metric_id": "lcr",
+        "value": 130,
+        "unit": "percent",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 16,
+        "evidence_quote": "the quarter ended 30 June 2025 was 130%",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+        "source_pdf_sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "130",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          16
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2025",
+        "metric_id": "lcr",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "cba_2025",
+      "split": "temporal_test",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "cba_2025",
+        "metric_id": "nsfr",
+        "value": 115,
+        "unit": "percent",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 16,
+        "evidence_quote": "The Group’s NSFR as at 30 June 2025 was 115%",
+        "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+        "source_pdf_sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "115",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          16
+        ]
+      },
+      "prediction": {
+        "document_id": "cba_2025",
+        "metric_id": "nsfr",
+        "value": 115,
+        "unit": "percent",
+        "period": "2025-06-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_65f57152d870ed9fb7cba293",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_65f57152d870ed9fb7cba293",
+        "page": 16,
+        "bbox": [
+          776.97,
+          546.5,
+          1118.56,
+          555.0
+        ],
+        "page_width": 1190.55,
+        "page_height": 841.89,
+        "text": "by stable sources of funding. The Group’s NSFR as at 30 June 2025 was 115% remaining"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2023",
+      "split": "development",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2023",
+        "metric_id": "cet1_ratio",
+        "value": 12.38,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 126,
+        "evidence_quote": "CET1 capital ratio 12.38%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+        "source_pdf_sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "12.38",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          126
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2023",
+        "metric_id": "cet1_ratio",
+        "value": 12.38,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_ede423d1f8a47d49a531d28f",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_ede423d1f8a47d49a531d28f",
+        "page": 127,
+        "bbox": [
+          56.69,
+          478.88,
+          566.26,
+          487.38
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Westpac’s Level 2 CET1 capital ratio was 12.38% at 30 September 2023, 109 basis points higher than 30 September 2022."
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2023",
+      "split": "development",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 20.45,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 126,
+        "evidence_quote": "Total regulatory capital ratio 20.45%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+        "source_pdf_sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "20.45",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          126
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 29.87,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_6a4041e40fabb94b624352f1",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_6a4041e40fabb94b624352f1",
+        "page": 128,
+        "bbox": [
+          31.18,
+          422.1,
+          532.91,
+          429.1
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Total regulatory capital ratio 29.87% 27.75% 26.61% 212 bps"
+      },
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2023",
+      "split": "development",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2023",
+        "metric_id": "rwa",
+        "value": 451418,
+        "unit": "AUD_million",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 126,
+        "evidence_quote": "Risk weighted assets (RWA) ($m) 451,418",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+        "source_pdf_sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "451,418",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          126
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2023",
+        "metric_id": "rwa",
+        "value": null,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "westpac_2023",
+      "split": "development",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2023",
+        "metric_id": "lcr",
+        "value": 134,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 124,
+        "evidence_quote": "Westpac’s average LCR for the quarter ended 30 September 2023 was 134%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+        "source_pdf_sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "134",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          124
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2023",
+        "metric_id": "lcr",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "westpac_2023",
+      "split": "development",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2023",
+        "metric_id": "nsfr",
+        "value": 115,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 124,
+        "evidence_quote": "Westpac’s NSFR was 115% at 30 September 2023",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+        "source_pdf_sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "115",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          124
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2023",
+        "metric_id": "nsfr",
+        "value": 115,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_0b4a31ec5b712f1dc3621f77",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_0b4a31ec5b712f1dc3621f77",
+        "page": 124,
+        "bbox": [
+          31.17,
+          694.76,
+          487.55,
+          701.76
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Net stable funding ratio 115% 121% 125%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2024",
+      "split": "development",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.49,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 125,
+        "evidence_quote": "CET1 capital ratio 12.49%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+        "source_pdf_sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "12.49",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          125
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.49,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_461e41cc683ebbe17a98f275",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_461e41cc683ebbe17a98f275",
+        "page": 125,
+        "bbox": [
+          59.53,
+          182.84,
+          561.77,
+          189.84
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "CET1 capital ratio 12.49% 12.38% 11.29% 11 bps"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2024",
+      "split": "development",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 21.38,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 125,
+        "evidence_quote": "Total regulatory capital ratio 21.38%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+        "source_pdf_sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "21.38",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          125
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 21.38,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_1fa6b43403474224100698a9",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_1fa6b43403474224100698a9",
+        "page": 126,
+        "bbox": [
+          28.35,
+          349.66,
+          409.55,
+          358.16
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "1 January 2026. Westpac's total regulatory capital ratio was 21.38% at 30 September 2024."
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": true,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2024",
+      "split": "development",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2024",
+        "metric_id": "rwa",
+        "value": 437430,
+        "unit": "AUD_million",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 125,
+        "evidence_quote": "Risk weighted assets (RWA) ($m) 437,430",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+        "source_pdf_sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "437,430",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          125
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2024",
+        "metric_id": "rwa",
+        "value": 437430,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_bff0b31115f8d2d27461b191",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_bff0b31115f8d2d27461b191",
+        "page": 105,
+        "bbox": [
+          59.53,
+          542.4,
+          564.09,
+          549.4
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Total risk weighted assets (RWA) ($m) 437,430 451,418 477,620 (3)"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2024",
+      "split": "development",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2024",
+        "metric_id": "lcr",
+        "value": 133,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 123,
+        "evidence_quote": "The average LCR for the quarter ended 30 September 2024 was 133%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+        "source_pdf_sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "133",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          123
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2024",
+        "metric_id": "lcr",
+        "value": 133,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "quarter_average",
+        "restated": false,
+        "candidate_id": "c_f492beca6f6dbc3c25cb5704",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_f492beca6f6dbc3c25cb5704",
+        "page": 105,
+        "bbox": [
+          59.53,
+          553.69,
+          561.77,
+          560.69
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Liquidity coverage ratio (LCR) 133% 134% 132% (59 bps)"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2024",
+      "split": "development",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2024",
+        "metric_id": "nsfr",
+        "value": 112,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 123,
+        "evidence_quote": "The NSFR was 112% at 30 September 2024",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+        "source_pdf_sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "112",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          123
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2024",
+        "metric_id": "nsfr",
+        "value": 112,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_c12a3ed728173819f1a5b1fe",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_c12a3ed728173819f1a5b1fe",
+        "page": 105,
+        "bbox": [
+          59.53,
+          564.98,
+          561.77,
+          571.98
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Net stable funding ratio (NSFR) 112% 115% 121% (261 bps)"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2025",
+      "split": "temporal_test",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2025",
+        "metric_id": "cet1_ratio",
+        "value": 12.5,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 20,
+        "evidence_quote": "The CET1 capital ratio of 12.5%",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+        "source_pdf_sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Annual report discloses one decimal place. Do not replace with a more precise figure from a separate results document.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "12.5",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          20
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2025",
+        "metric_id": "cet1_ratio",
+        "value": 12.5,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_8402f076a1960edda5dc7a8c",
+        "status": "pending",
+        "issues": [
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_8402f076a1960edda5dc7a8c",
+        "page": 6,
+        "bbox": [
+          28.35,
+          487.74,
+          269.45,
+          496.24
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "(CET1) capital ratio of 12.5%. This capital strength places"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "westpac_2025",
+      "split": "temporal_test",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": false,
+      "gold": {
+        "document_id": "westpac_2025",
+        "metric_id": "total_capital_ratio",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "evidence_page": null,
+        "evidence_quote": null,
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+        "source_pdf_sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4",
+        "annotation_status": "unverified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. No current-period value located in this annual report. Absence is not yet exhaustively verified; excluded from scoring. No other document substituted.",
+        "value_tolerance": null
+      },
+      "prediction": {
+        "document_id": "westpac_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 17,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_74f4734b88b2e1f3dd7821f2",
+        "status": "pending",
+        "issues": [
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_74f4734b88b2e1f3dd7821f2",
+        "page": 102,
+        "bbox": [
+          56.69,
+          803.48,
+          267.2,
+          811.98
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "14%, with a total capital ratio requirement of 17%"
+      },
+      "scores": null
+    },
+    {
+      "document_id": "westpac_2025",
+      "split": "temporal_test",
+      "metric_id": "rwa",
+      "gold_verified": false,
+      "gold": {
+        "document_id": "westpac_2025",
+        "metric_id": "rwa",
+        "value": null,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "evidence_page": null,
+        "evidence_quote": null,
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+        "source_pdf_sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4",
+        "annotation_status": "unverified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. No current-period value located in this annual report. Absence is not yet exhaustively verified; excluded from scoring. No other document substituted.",
+        "value_tolerance": null
+      },
+      "prediction": {
+        "document_id": "westpac_2025",
+        "metric_id": "rwa",
+        "value": 6250,
+        "unit": "AUD_million",
+        "period": "2025-10-15",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_71dba7c74a8d4979bec55eaf",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_71dba7c74a8d4979bec55eaf",
+        "page": 101,
+        "bbox": [
+          318.9,
+          783.06,
+          566.18,
+          791.56
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "risk weighted assets of $6,250 million. This change applied"
+      },
+      "scores": null
+    },
+    {
+      "document_id": "westpac_2025",
+      "split": "temporal_test",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2025",
+        "metric_id": "lcr",
+        "value": 137,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 20,
+        "evidence_quote": "137",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+        "source_pdf_sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Value manually read from the dark current-period bar in the LCR AND NSFR (%) chart on physical page 20; source is a chart, not a prose sentence.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "137",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          20
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2025",
+        "metric_id": "lcr",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "westpac_2025",
+      "split": "temporal_test",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "westpac_2025",
+        "metric_id": "nsfr",
+        "value": 113,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 20,
+        "evidence_quote": "113",
+        "source_url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+        "source_pdf_sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Value manually read from the dark current-period bar in the LCR AND NSFR (%) chart on physical page 20; source is a chart, not a prose sentence.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "113",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          20
+        ]
+      },
+      "prediction": {
+        "document_id": "westpac_2025",
+        "metric_id": "nsfr",
+        "value": null,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "anz_2023",
+      "split": "development",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2023",
+        "metric_id": "cet1_ratio",
+        "value": 13.3,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 184,
+        "evidence_quote": "Common Equity Tier 1 13.3%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+        "source_pdf_sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "13.3",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          184
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2023",
+        "metric_id": "cet1_ratio",
+        "value": 13.3,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_a99b502bf5c5fd84e967076d",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_a99b502bf5c5fd84e967076d",
+        "page": 46,
+        "bbox": [
+          43.9,
+          114.55,
+          503.47,
+          138.01
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Common Equity Tier 1 (Level 2) - APRA Basel III 13.3% 12.3%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2023",
+      "split": "development",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 21.0,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 184,
+        "evidence_quote": "Total capital ratio 21.0%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+        "source_pdf_sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "21.0",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          184
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 21.0,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_2d712578db5c1aebdee5a1ff",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_2d712578db5c1aebdee5a1ff",
+        "page": 184,
+        "bbox": [
+          29.86,
+          390.64,
+          566.67,
+          399.77
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Total capital ratio 21.0% 18.2%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2023",
+      "split": "development",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2023",
+        "metric_id": "rwa",
+        "value": 433327,
+        "unit": "AUD_million",
+        "period": "2023-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 184,
+        "evidence_quote": "Risk weighted assets 433,327",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+        "source_pdf_sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "433,327",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          184
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2023",
+        "metric_id": "rwa",
+        "value": null,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "Selected number does not occur in candidate row"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "anz_2023",
+      "split": "development",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2023",
+        "metric_id": "lcr",
+        "value": 130,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "reported",
+        "observation": "year_average",
+        "restated": false,
+        "evidence_page": 45,
+        "evidence_quote": "Liquidity Coverage Ratio (LCR) 1 130%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+        "source_pdf_sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity. Source footnote explicitly says Full year average, not quarterly average.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "130",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          45
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2023",
+        "metric_id": "lcr",
+        "value": 130,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "year_average",
+        "restated": false,
+        "candidate_id": "c_6b5e13360e63b91568ee1758",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_6b5e13360e63b91568ee1758",
+        "page": 45,
+        "bbox": [
+          43.24,
+          136.13,
+          556.71,
+          145.72
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Liquidity Coverage Ratio (LCR) 1 130% 131%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2023",
+      "split": "development",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2023",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 162,
+        "evidence_quote": "Net Stable Funding Ratio (NSFR) as at 30 September 2023 was 116%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+        "source_pdf_sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "116",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          162
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2023",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_baae15154a02e7f1de6f8701",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_baae15154a02e7f1de6f8701",
+        "page": 162,
+        "bbox": [
+          27.66,
+          179.29,
+          537.51,
+          188.29
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Net Stable Funding Ratio - ANZBGL’s Net Stable Funding Ratio (NSFR) as at 30 September 2023 was 116% (2022: 119%), above the regulatory"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2024",
+      "split": "development",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.2,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 187,
+        "evidence_quote": "Common Equity Tier 1 12.2%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+        "source_pdf_sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "12.2",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          187
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.2,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_ef5a03d93d6d705533db0bb5",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_ef5a03d93d6d705533db0bb5",
+        "page": 49,
+        "bbox": [
+          53.02,
+          117.8,
+          495.98,
+          138.43
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Common Equity Tier 1 (Level 2) - APRA Basel III 12.2% 13.3%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2024",
+      "split": "development",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 20.6,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 187,
+        "evidence_quote": "Total capital ratio 20.6%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+        "source_pdf_sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "20.6",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          187
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 20.6,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_4f3f19236cf2ef592e7e2b81",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_4f3f19236cf2ef592e7e2b81",
+        "page": 187,
+        "bbox": [
+          30.35,
+          449.66,
+          540.87,
+          457.7
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Total capital ratio 20.6% 21.0%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2024",
+      "split": "development",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2024",
+        "metric_id": "rwa",
+        "value": 446582,
+        "unit": "AUD_million",
+        "period": "2024-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 187,
+        "evidence_quote": "Risk weighted assets 446,582",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+        "source_pdf_sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "446,582",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          187
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2024",
+        "metric_id": "rwa",
+        "value": 446600.0,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_ed3f59884df1bb2f5ab748bd",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_ed3f59884df1bb2f5ab748bd",
+        "page": 49,
+        "bbox": [
+          53.02,
+          156.07,
+          557.51,
+          164.11
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Total risk weighted assets ($b) 446.6 433.3 3%"
+      },
+      "scores": {
+        "value_correct": false,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2024",
+      "split": "development",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2024",
+        "metric_id": "lcr",
+        "value": 133,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "reported",
+        "observation": "year_average",
+        "restated": false,
+        "evidence_page": 48,
+        "evidence_quote": "Liquidity Coverage Ratio (LCR) 1 133%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+        "source_pdf_sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity. Source footnote explicitly says Full year average, not quarterly average.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "133",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          48
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2024",
+        "metric_id": "lcr",
+        "value": 133,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "year_average",
+        "restated": false,
+        "candidate_id": "c_7cce8c78e5b9f04d2873adde",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_7cce8c78e5b9f04d2873adde",
+        "page": 48,
+        "bbox": [
+          38.84,
+          142.49,
+          547.83,
+          151.15
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Liquidity Coverage Ratio (LCR) 1 133% 130%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2024",
+      "split": "development",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2024",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 165,
+        "evidence_quote": "Net Stable Funding Ratio (NSFR) as at 30 September 2024 was 116%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+        "source_pdf_sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "116",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          165
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2024",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "year_average",
+        "restated": false,
+        "candidate_id": "c_efb9355c15305cb9d43cd9f8",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_efb9355c15305cb9d43cd9f8",
+        "page": 48,
+        "bbox": [
+          36.68,
+          516.01,
+          535.59,
+          524.05
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Net Stable Funding Ratio 116% 116%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2025",
+      "split": "temporal_test",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2025",
+        "metric_id": "cet1_ratio",
+        "value": 12.0,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 188,
+        "evidence_quote": "Common Equity Tier 1 12.0%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+        "source_pdf_sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "12.0",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          188
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2025",
+        "metric_id": "cet1_ratio",
+        "value": 12.0,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_ca39848d7ffd12f921335e17",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_ca39848d7ffd12f921335e17",
+        "page": 53,
+        "bbox": [
+          58.71,
+          117.87,
+          501.64,
+          138.33
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Common Equity Tier 1 (Level 2) - APRA Basel III 12.0% 12.2%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2025",
+      "split": "temporal_test",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 21.0,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 188,
+        "evidence_quote": "Total capital ratio 21.0%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+        "source_pdf_sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.05,
+        "source_raw_value": "21.0",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          188
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 21.0,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_3c0e06f3ca92f56ad49bba42",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_3c0e06f3ca92f56ad49bba42",
+        "page": 188,
+        "bbox": [
+          30.36,
+          449.78,
+          540.78,
+          457.76
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Total capital ratio 21.0% 20.6%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2025",
+      "split": "temporal_test",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2025",
+        "metric_id": "rwa",
+        "value": 458547,
+        "unit": "AUD_million",
+        "period": "2025-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 188,
+        "evidence_quote": "Risk weighted assets 458,547",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+        "source_pdf_sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "458,547",
+        "source_raw_unit": "AUD_million",
+        "evidence_pages": [
+          188
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2025",
+        "metric_id": "rwa",
+        "value": 458547,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_28f792de7d1586fb36df1331",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_28f792de7d1586fb36df1331",
+        "page": 188,
+        "bbox": [
+          30.36,
+          462.74,
+          540.79,
+          470.72
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Risk weighted assets 458,547 446,582"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2025",
+      "split": "temporal_test",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2025",
+        "metric_id": "lcr",
+        "value": 132,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "reported",
+        "observation": "year_average",
+        "restated": false,
+        "evidence_page": 52,
+        "evidence_quote": "Liquidity Coverage Ratio (LCR) 1 132%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+        "source_pdf_sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity. Source footnote explicitly says Full year average, not quarterly average.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "132",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          52
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2025",
+        "metric_id": "lcr",
+        "value": 132,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "year_average",
+        "restated": false,
+        "candidate_id": "c_c18e349a5488366ff7f29850",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_c18e349a5488366ff7f29850",
+        "page": 52,
+        "bbox": [
+          38.85,
+          142.48,
+          534.32,
+          151.08
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Liquidity Coverage Ratio (LCR) 1 132% 133%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "anz_2025",
+      "split": "temporal_test",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "anz_2025",
+        "metric_id": "nsfr",
+        "value": 115,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "ANZBGL Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 167,
+        "evidence_quote": "Net Stable Funding Ratio (NSFR) as at 30 September 2025 was 115%",
+        "source_url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+        "source_pdf_sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. ANZ Bank Group/ANZBGL regulatory group, not the whole ANZGHL accounting group; source explicitly names the reporting entity.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "115",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          167
+        ]
+      },
+      "prediction": {
+        "document_id": "anz_2025",
+        "metric_id": "nsfr",
+        "value": 115,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_601060ca3fb94b378dae1887",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_601060ca3fb94b378dae1887",
+        "page": 52,
+        "bbox": [
+          36.69,
+          528.04,
+          535.46,
+          536.02
+        ],
+        "page_width": 595.276,
+        "page_height": 841.89,
+        "text": "Net Stable Funding Ratio 115% 116%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2023",
+      "split": "bank_test",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2023",
+        "metric_id": "cet1_ratio",
+        "value": 12.22,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "unknown",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 110,
+        "evidence_quote": "Common Equity Tier 1 (CET1) capital ratio 12.22%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+        "source_pdf_sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Numeric value and Group scope verified; summary page does not explicitly label Level 2, so basis remains unknown pending a second context review.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "12.22",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          110
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2023",
+        "metric_id": "cet1_ratio",
+        "value": 12.22,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_3393e387db058b647b842c88",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_3393e387db058b647b842c88",
+        "page": 110,
+        "bbox": [
+          62.36,
+          485.4,
+          544.32,
+          493.97
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Common Equity Tier 1 (CET1) capital ratio 12.22% 11.51% 13.00% 11.47% 10.38%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": false,
+        "context_correct": null,
+        "complete_fact_correct": null,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2023",
+      "split": "bank_test",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 19.88,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "unknown",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 110,
+        "evidence_quote": "Total capital ratio 19.88%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+        "source_pdf_sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Numeric value and Group scope verified; summary page does not explicitly label Level 2, so basis remains unknown pending a second context review.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "19.88",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          110
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2023",
+        "metric_id": "total_capital_ratio",
+        "value": 19.88,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_9528b0ac68309014415f3d73",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_9528b0ac68309014415f3d73",
+        "page": 110,
+        "bbox": [
+          62.36,
+          510.91,
+          544.32,
+          519.49
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Total capital ratio 19.88% 18.17% 18.91% 16.62% 14.68%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": false,
+        "context_correct": null,
+        "complete_fact_correct": null,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2023",
+      "split": "bank_test",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2023",
+        "metric_id": "rwa",
+        "value": 435000,
+        "unit": "AUD_million",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "unknown",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 110,
+        "evidence_quote": "Risk-weighted assets ($bn) 435.0",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+        "source_pdf_sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Source discloses AUD billions to one decimal place; normalized by multiplying by 1000. Source rounding resolution is AUD 100 million. Numeric value and Group scope verified; summary page does not explicitly label Level 2, so basis remains unknown pending a second context review.",
+        "source_rounding_AUD_million": 100,
+        "value_tolerance": 50,
+        "source_raw_value": "435.0",
+        "source_raw_unit": "AUD_billion",
+        "evidence_pages": [
+          110
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2023",
+        "metric_id": "rwa",
+        "value": null,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "unknown",
+        "basis": "unknown",
+        "observation": "unknown",
+        "restated": false,
+        "candidate_id": null,
+        "status": "missing",
+        "issues": [
+          "No supported current-period value selected"
+        ],
+        "method": "qwen"
+      },
+      "evidence": null,
+      "scores": {
+        "value_correct": false,
+        "context_labelled": false,
+        "context_correct": null,
+        "complete_fact_correct": null,
+        "has_prediction": false,
+        "has_evidence": false,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "missing"
+      }
+    },
+    {
+      "document_id": "nab_2023",
+      "split": "bank_test",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2023",
+        "metric_id": "lcr",
+        "value": 140,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 116,
+        "evidence_quote": "The Group's LCR averaged 140% during the September quarter",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+        "source_pdf_sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "140",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          116
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2023",
+        "metric_id": "lcr",
+        "value": 140,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_02c04aee8f45da95302421b7",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_02c04aee8f45da95302421b7",
+        "page": 20,
+        "bbox": [
+          56.69,
+          306.54,
+          290.21,
+          314.54
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Ratio (LCR) of 140% and 30 September 2023 Net Stable Funding"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2023",
+      "split": "bank_test",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2023",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 115,
+        "evidence_quote": "As at 30 September 2023, the Group’s NSFR was 116%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+        "source_pdf_sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "116",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          115
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2023",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2023-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_dce6b93a9d11b723773d42c4",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_dce6b93a9d11b723773d42c4",
+        "page": 20,
+        "bbox": [
+          56.69,
+          317.04,
+          284.04,
+          325.04
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Ratio (NSFR) of 116%. This is supported by $40 billion(1) of term"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": false,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2024",
+      "split": "bank_test",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.35,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 114,
+        "evidence_quote": "Common Equity Tier 1 (CET1) capital ratio 12.35%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+        "source_pdf_sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "12.35",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          114
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2024",
+        "metric_id": "cet1_ratio",
+        "value": 12.35,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_7ca4973b8e0ecacddb2a52c0",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_7ca4973b8e0ecacddb2a52c0",
+        "page": 114,
+        "bbox": [
+          62.36,
+          485.59,
+          544.32,
+          493.97
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Common Equity Tier 1 (CET1) capital ratio 12.35% 12.22% 11.51% 13.00% 11.47%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2024",
+      "split": "bank_test",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 20.92,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 114,
+        "evidence_quote": "Total capital ratio 20.92%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+        "source_pdf_sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "20.92",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          114
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2024",
+        "metric_id": "total_capital_ratio",
+        "value": 20.92,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_96324d8e1b152790c6b8567a",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_96324d8e1b152790c6b8567a",
+        "page": 114,
+        "bbox": [
+          62.36,
+          511.1,
+          544.32,
+          519.49
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Total capital ratio 20.92% 19.88% 18.17% 18.91% 16.62%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2024",
+      "split": "bank_test",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2024",
+        "metric_id": "rwa",
+        "value": 413900,
+        "unit": "AUD_million",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 114,
+        "evidence_quote": "Risk-weighted assets ($bn) 413.9",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+        "source_pdf_sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Source discloses AUD billions to one decimal place; normalized by multiplying by 1000. Source rounding resolution is AUD 100 million.",
+        "source_rounding_AUD_million": 100,
+        "value_tolerance": 50,
+        "source_raw_value": "413.9",
+        "source_raw_unit": "AUD_billion",
+        "evidence_pages": [
+          114
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2024",
+        "metric_id": "rwa",
+        "value": 413900.0,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_4b094236e94e0ca27090fc7c",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "APRA Level 2 capital basis needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_4b094236e94e0ca27090fc7c",
+        "page": 114,
+        "bbox": [
+          62.36,
+          523.85,
+          544.32,
+          532.24
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Risk-weighted assets ($bn) 413.9 435.0 449.9 417.2 425.1"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2024",
+      "split": "bank_test",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2024",
+        "metric_id": "lcr",
+        "value": 137,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 120,
+        "evidence_quote": "The Group's LCR averaged 137% during the September 2024 quarter",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+        "source_pdf_sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "137",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          120
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2024",
+        "metric_id": "lcr",
+        "value": 137,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "candidate_id": "c_30a0641aaa40b6100a024d38",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_30a0641aaa40b6100a024d38",
+        "page": 120,
+        "bbox": [
+          56.69,
+          740.65,
+          277.84,
+          748.65
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "The Group's LCR averaged 137% during the September 2024"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2024",
+      "split": "bank_test",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2024",
+        "metric_id": "nsfr",
+        "value": 117,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 119,
+        "evidence_quote": "As at 30 September 2024, the Group’s NSFR was 117%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+        "source_pdf_sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "117",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          119
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2024",
+        "metric_id": "nsfr",
+        "value": 117,
+        "unit": "percent",
+        "period": "2024-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_7eccd5807366b760273776e1",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_7eccd5807366b760273776e1",
+        "page": 119,
+        "bbox": [
+          297.64,
+          705.72,
+          504.77,
+          713.72
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "As at 30 September 2024, the Group’s NSFR was 117% up"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2025",
+      "split": "bank_test",
+      "metric_id": "cet1_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2025",
+        "metric_id": "cet1_ratio",
+        "value": 11.7,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 92,
+        "evidence_quote": "Common Equity Tier 1 (CET1) capital ratio 11.70%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+        "source_pdf_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "11.70",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          92
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2025",
+        "metric_id": "cet1_ratio",
+        "value": 11.7,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_02e7bb4c41ad98b0bd47b23a",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_02e7bb4c41ad98b0bd47b23a",
+        "page": 92,
+        "bbox": [
+          62.36,
+          505.42,
+          544.32,
+          513.81
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Common Equity Tier 1 (CET1) capital ratio 11.70% 12.35% 12.22% 11.51% 13.00%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2025",
+      "split": "bank_test",
+      "metric_id": "total_capital_ratio",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 20.32,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 92,
+        "evidence_quote": "Total capital ratio 20.32%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+        "source_pdf_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.005,
+        "source_raw_value": "20.32",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          92
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2025",
+        "metric_id": "total_capital_ratio",
+        "value": 20.32,
+        "unit": "percent",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_8c2e0405cc3b325a36a729c0",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_8c2e0405cc3b325a36a729c0",
+        "page": 92,
+        "bbox": [
+          62.36,
+          530.93,
+          544.32,
+          539.32
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Total capital ratio 20.32% 20.92% 19.88% 18.17% 18.91%"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2025",
+      "split": "bank_test",
+      "metric_id": "rwa",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2025",
+        "metric_id": "rwa",
+        "value": 440600,
+        "unit": "AUD_million",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 92,
+        "evidence_quote": "Risk-weighted assets ($bn) 440.6",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+        "source_pdf_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing. Source discloses AUD billions to one decimal place; normalized by multiplying by 1000. Source rounding resolution is AUD 100 million.",
+        "source_rounding_AUD_million": 100,
+        "value_tolerance": 50,
+        "source_raw_value": "440.6",
+        "source_raw_unit": "AUD_billion",
+        "evidence_pages": [
+          92
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2025",
+        "metric_id": "rwa",
+        "value": 440600.0,
+        "unit": "AUD_million",
+        "period": null,
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_3437289ad491115695b5e888",
+        "status": "pending",
+        "issues": [
+          "Model date was not found in page-local evidence",
+          "Reporting date needs confirmation",
+          "APRA Level 2 capital basis needs confirmation",
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_3437289ad491115695b5e888",
+        "page": 92,
+        "bbox": [
+          62.36,
+          543.69,
+          544.32,
+          552.08
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "Risk-weighted assets ($bn) 440.6 413.9 435.0 449.9 417.2"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2025",
+      "split": "bank_test",
+      "metric_id": "lcr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2025",
+        "metric_id": "lcr",
+        "value": 135,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "quarter_average",
+        "restated": false,
+        "evidence_page": 97,
+        "evidence_quote": "The Group's LCR averaged 135% during the September 2025 quarter",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+        "source_pdf_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "135",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          97
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2025",
+        "metric_id": "lcr",
+        "value": 135,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "quarter_average",
+        "restated": false,
+        "candidate_id": "c_19d67b9c066840ef2f8a2861",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_19d67b9c066840ef2f8a2861",
+        "page": 97,
+        "bbox": [
+          297.64,
+          614.11,
+          519.36,
+          622.11
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "The Group's LCR averaged 135% during the September 2025"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    },
+    {
+      "document_id": "nab_2025",
+      "split": "bank_test",
+      "metric_id": "nsfr",
+      "gold_verified": true,
+      "gold": {
+        "document_id": "nab_2025",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "reported",
+        "observation": "point_in_time",
+        "restated": false,
+        "evidence_page": 97,
+        "evidence_quote": "At 30 September 2025, the Group’s NSFR was 116%",
+        "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+        "source_pdf_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+        "annotation_status": "verified",
+        "annotation_by": "source_review_assisted",
+        "annotation_notes": "Source-review-assisted annotation; not independent human double review. Quotes normalize whitespace and decimal spacing.",
+        "value_tolerance": 0.5,
+        "source_raw_value": "116",
+        "source_raw_unit": "percent",
+        "evidence_pages": [
+          97
+        ]
+      },
+      "prediction": {
+        "document_id": "nab_2025",
+        "metric_id": "nsfr",
+        "value": 116,
+        "unit": "percent",
+        "period": "2025-09-30",
+        "entity_scope": "Group",
+        "basis": "APRA Level 2",
+        "observation": "point_in_time",
+        "restated": false,
+        "candidate_id": "c_3f6747eb1f3bd21d7a7841f6",
+        "status": "pending",
+        "issues": [
+          "Verify date, column and scope against the highlighted source before accepting"
+        ],
+        "method": "qwen"
+      },
+      "evidence": {
+        "id": "c_3f6747eb1f3bd21d7a7841f6",
+        "page": 97,
+        "bbox": [
+          42.52,
+          624.56,
+          252.34,
+          632.56
+        ],
+        "page_width": 595.27563,
+        "page_height": 841.88977,
+        "text": "At 30 September 2025, the Group’s NSFR was 116%, down"
+      },
+      "scores": {
+        "value_correct": true,
+        "context_labelled": true,
+        "context_correct": false,
+        "complete_fact_correct": false,
+        "has_prediction": true,
+        "has_evidence": true,
+        "selected_gold_evidence_correct": true,
+        "gold_page_candidate_hit": true,
+        "review_status": "pending"
+      }
+    }
+  ],
+  "scorer_version": "source-tuple-v2",
+  "rescored_at": "2026-09-18T09:13:21.440249+00:00",
+  "source_hashes_verified": true
+}

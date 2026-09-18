@@ -1,0 +1,962 @@
+{
+  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+  "source_pdf_sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca",
+  "parser_version": "native-rows-v3",
+  "candidates": [
+    {
+      "id": "c_b662e384ceef9747c38d7d2e",
+      "document_id": "cba_2023",
+      "page": 5,
+      "bbox": [
+        97.64,
+        560.1,
+        181.64,
+        568.6
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "CET1 (APRA, Level 2)",
+      "context": "3\n2023 COMMONWEALTH\nANNUAL\n2023\nREPORT\nBANK\nhighlights\nOVERVIEW\nFinancial\n▲ 6%\n79%\nCost-to-income ratio\nREPORT\n2.8%\npeople engagement\n12.2% 860,000+\nRetail Banking Services\nFINANCIAL\nCapital ratio $5,158m\nshareholders,\n78% Australian owned\nCET1 (APRA, Level 2)\nBusiness Banking\nREPORT\n70 basis points",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "2"
+      ]
+    },
+    {
+      "id": "c_cb266e2e88077783e5f0ba1a",
+      "document_id": "cba_2023",
+      "page": 5,
+      "bbox": [
+        97.64,
+        560.1,
+        181.64,
+        584.77
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "CET1 (APRA, Level 2) 70 basis points",
+      "context": "3\n2023 COMMONWEALTH\nANNUAL\n2023\nREPORT\nBANK\nhighlights\nOVERVIEW\nFinancial\n▲ 6%\n79%\nCost-to-income ratio\nREPORT\n2.8%\npeople engagement\n12.2% 860,000+\nRetail Banking Services\nFINANCIAL\nCapital ratio $5,158m\nshareholders,\n78% Australian owned\nCET1 (APRA, Level 2)\nBusiness Banking\nREPORT\n70 basis points",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "2",
+        "70"
+      ]
+    },
+    {
+      "id": "c_2e89beeb728bf88776a126de",
+      "document_id": "cba_2023",
+      "page": 5,
+      "bbox": [
+        97.64,
+        763.44,
+        513.87,
+        769.94
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Financials are presented on a continuing operations basis, except the Common Equity Tier 1 (CET1) capital ratio which includes discontinued",
+      "context": "3\n2023 COMMONWEALTH\nANNUAL\n2023\nREPORT\nBANK\nhighlights\nOVERVIEW\nFinancial\n142%\nand Markets 10-year\nADDITIONAL\nDividend per share, 72%\n$1,031m\n5-year\nfully franked\n16%\n1-year\nNew Zealand\nINFORMATION\n$1,356m\nFinancials are presented on a continuing operations basis, except the Common Equity Tier 1 (CET1) capital ratio which includes discontinued\noperations. Comparative information has been restated. All figures relate to the full year ended 30 June 2023 and comparisons are to the year\nended 30 June 2022, except for people engagement which is as at March 2023. For data sources, see Glossary on pages 290–303.",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1"
+      ]
+    },
+    {
+      "id": "c_4850a26807a490fced301ca7",
+      "document_id": "cba_2023",
+      "page": 5,
+      "bbox": [
+        97.64,
+        763.44,
+        516.13,
+        786.94
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Financials are presented on a continuing operations basis, except the Common Equity Tier 1 (CET1) capital ratio which includes discontinued operations. Comparative information has been restated. All figures relate to the full year ended 30 June 2023 and comparisons are to the year ended 30 June 2022, except for people engagement which is as at March 2023. For data sources, see Glossary on pages 290–303.",
+      "context": "3\n2023 COMMONWEALTH\nANNUAL\n2023\nREPORT\nBANK\nhighlights\nOVERVIEW\nFinancial\n142%\nand Markets 10-year\nADDITIONAL\nDividend per share, 72%\n$1,031m\n5-year\nfully franked\n16%\n1-year\nNew Zealand\nINFORMATION\n$1,356m\nFinancials are presented on a continuing operations basis, except the Common Equity Tier 1 (CET1) capital ratio which includes discontinued\noperations. Comparative information has been restated. All figures relate to the full year ended 30 June 2023 and comparisons are to the year\nended 30 June 2022, except for people engagement which is as at March 2023. For data sources, see Glossary on pages 290–303.",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "30",
+        "2023",
+        "30",
+        "2022",
+        "2023",
+        "290",
+        "303"
+      ]
+    },
+    {
+      "id": "c_46a41330ac7586e7d3495a2a",
+      "document_id": "cba_2023",
+      "page": 52,
+      "bbox": [
+        56.69,
+        580.49,
+        255.76,
+        590.49
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Common Equity Tier 1 (CET1) capital ratio",
+      "context": "50\nFinancial\nperformance\nOur results for the 2023 financial year reflect\nour continued focus on customers, disciplined\noperational and strategic execution, strengthened\nbalance sheet and improved financial outcomes. 1\nNet profit after tax\nDividend\nVolume growth in core business 2\nNet interest margin (NIM)\nHome lending 2.07%\n+$26.2bn 1.0x system\n17bpts on FY22\nHousehold deposits\nGroup NIM increased due to the rising interest rate\n+$18.3bn 0.7x system\nenvironment, partly offset by the intensifying competition\nBusiness lending\nfor home loans.\n+$14.5bn 1.4x system\nCommon Equity Tier 1 (CET1) capital ratio\nLoan impairment and credit provisions\n12.2% $1,108m 1.64%\nAPRA (Level 2)",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1"
+      ]
+    },
+    {
+      "id": "c_6dd3bd18eb388f271968749d",
+      "document_id": "cba_2023",
+      "page": 52,
+      "bbox": [
+        56.69,
+        580.49,
+        486.99,
+        625.28
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Common Equity Tier 1 (CET1) capital ratio 12.2% $1,108m 1.64% APRA (Level 2)",
+      "context": "50\nFinancial\nperformance\nOur results for the 2023 financial year reflect\nour continued focus on customers, disciplined\noperational and strategic execution, strengthened\nbalance sheet and improved financial outcomes. 1\nNet profit after tax\nDividend\nVolume growth in core business 2\nNet interest margin (NIM)\nHome lending 2.07%\n+$26.2bn 1.0x system\n17bpts on FY22\nHousehold deposits\nGroup NIM increased due to the rising interest rate\n+$18.3bn 0.7x system\nenvironment, partly offset by the intensifying competition\nBusiness lending\nfor home loans.\n+$14.5bn 1.4x system\nCommon Equity Tier 1 (CET1) capital ratio\nLoan impairment and credit provisions\n12.2% $1,108m 1.64%\nAPRA (Level 2)",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "12.2%",
+        "1",
+        "1.64%",
+        "2"
+      ]
+    },
+    {
+      "id": "c_b364c23aa2ac11b8ac5537af",
+      "document_id": "cba_2023",
+      "page": 52,
+      "bbox": [
+        56.69,
+        794.43,
+        249.59,
+        800.93
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "4 Total provisions as a percentage of credit risk weighted assets.",
+      "context": "50\nFinancial\nperformance\nOur results for the 2023 financial year reflect\nour continued focus on customers, disciplined\noperational and strategic execution, strengthened\nbalance sheet and improved financial outcomes. 1\nNet profit after tax\nDividend\nthe previously announced $3 billion on-market share buy-back\nreflecting our cautious approach to managing risks as financial\ncompleted during the year, the Group has announced an intention\nconditions continue to tighten.\nto conduct a further $1 billion on-market share buy-back 3.\n1 All information in this section is presented on a continuing operations basis, unless stated otherwise. Comparative information has been restated.\nFor further details refer to Note 1.1 in the Financial report on pages 127–128.\n2 As reported in RBA Lending and Credit Aggregates (Home Lending and Business Lending) and APRA Monthly ADI Statistics (Household Deposits).\nCBA Business Lending multiple estimate is based on Business Banking growth rate (excluding Institutional Banking and Markets) over published APRA\nTotal Business Lending Data (excluding estimated Institutional Lending balances).\n3 The timing and actual number of shares purchased under the buy-back will depend on market conditions, available trading windows and other considerations.\nCBA reserves the right to vary, suspend or terminate the buy-back at any time.\n4 Total provisions as a percentage of credit risk weighted assets.",
+      "metric_ids": [
+        "rwa"
+      ],
+      "numbers": [
+        "4"
+      ]
+    },
+    {
+      "id": "c_421c94c71160242104c7d0a6",
+      "document_id": "cba_2023",
+      "page": 56,
+      "bbox": [
+        56.68,
+        808.66,
+        224.75,
+        815.16
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "1 Ratio of total provisions to credit risk weighted assets.",
+      "context": "54\nFINANCIAL PERFORMANCE\nProvisions and credit quality\nLoan impairment\nLoan impairment\nLoan impairment reflects changes\nLoan loss rate (bpts) as a percentage of lending\nin our estimates of expected\n$1,108m\nLoan impairment provisions\nOur total impairment provisions increased to $5,950 million\nTotal impairment provisions ($m)\nfrom $5,347 million in FY22 reflecting ongoing inflationary\npressures, rising interest rates and a decline in house prices.\nFY21 1.63% 1 6,211\nThe Group maintains a cautious approach to managing\nFY22 1.63% 1 5,347\npotential risks as financial conditions continue to tighten.\nFY23 1.64% 1 5,950\nProvisioning coverage remains strong with the provision\ncoverage ratio at 1.64%.\n1 Ratio of total provisions to credit risk weighted assets.",
+      "metric_ids": [
+        "rwa"
+      ],
+      "numbers": [
+        "1"
+      ]
+    },
+    {
+      "id": "c_1970448e50b70d9560fc7020",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        181.59,
+        256.42,
+        519.0,
+        265.19
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "a Common Equity Tier 1 (CET1) capital ratio and continue returning excess capital to",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\ncustomers while delivering sustainable returns to our shareholders.\nCapital\nOVERVIEW\nCommon Equity\nThe Group has a strong capital position with customers, manage ongoing uncertainties\nTier 1 capital ratio\na Common Equity Tier 1 (CET1) capital ratio and continue returning excess capital to\nof 12.2% as at 30 June 2023, well in excess shareholders.\n12.2% 1\nof regulatory minimum capital requirement",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1"
+      ]
+    },
+    {
+      "id": "c_f7f2ff6cfb2e9e20986a823c",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        181.59,
+        256.42,
+        519.0,
+        285.43
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "a Common Equity Tier 1 (CET1) capital ratio and continue returning excess capital to of 12.2% as at 30 June 2023, well in excess shareholders. of regulatory minimum capital requirement",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\ncustomers while delivering sustainable returns to our shareholders.\nCapital\nOVERVIEW\nCommon Equity\nThe Group has a strong capital position with customers, manage ongoing uncertainties\nTier 1 capital ratio\na Common Equity Tier 1 (CET1) capital ratio and continue returning excess capital to\nof 12.2% as at 30 June 2023, well in excess shareholders.\n12.2% 1\nof regulatory minimum capital requirement",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "12.2%",
+        "30",
+        "2023"
+      ]
+    },
+    {
+      "id": "c_2c42174917b36616d13bc29b",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        181.59,
+        323.6,
+        336.63,
+        332.1
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The Bank’s CET1 ratio was supported by",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\n12.2% 1\nof regulatory minimum capital requirement\nOn 9 August 2023, the Group announced\nof 10.25%. This represents a $9 billion of\nits intention to undertake a further $1 billion\nAPRA (Level 2)\ncapital surplus to the minimum regulatory\non-market share buy-back. 2\nrequirement.\nFY22 11.5%\nCREATING\nThe Bank is an Authorised Deposit-taking\nThe Bank’s CET1 ratio was supported by\nstrong organic capital generation from\nInstitution (ADI) regulated by APRA.\nearnings, the removal of the remaining",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_10612579d990f75a9976fe6d",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        367.32,
+        551.52,
+        501.32,
+        560.05
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The liquidity coverage ratio (LCR)",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\non-market share buy-back.\nDIRECTORS’\nFor more details on divestments refer to Note\nThe strong capital position and our progress\n11.3 on pages 259–260 in the Financial report.\non executing our strategy means that we\nare well placed to continue to support our\nREPORT\nFunding and liquidity\nFINANCIAL\nDeposit\nThe deposit funding ratio represents the\nThe liquidity coverage ratio (LCR)\nfunding ratio\nproportion of total funding made up of\nrepresents the level of high quality liquid",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_02fee98dd2089924687b4de6",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        367.32,
+        593.51,
+        521.61,
+        602.01
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The Group’s average LCR for the quarter",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\nThe deposit funding ratio represents the\nThe liquidity coverage ratio (LCR)\nfunding ratio\nproportion of total funding made up of\nrepresents the level of high quality liquid\ncustomer deposits. Customer deposits\nassets available to meet short-term\nREPORT\n75%\nare considered the most stable source\nobligations in a liquidity stress scenario.\nof funding. The strength of our banking\nThe Group’s average LCR for the quarter\nFY22 74%\nbusiness has allowed us to maintain\nended 30 June 2023 was 131% which was",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_1a4b13d9add2dc04f16f1281",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        367.32,
+        593.51,
+        531.94,
+        623.0
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The Group’s average LCR for the quarter ended 30 June 2023 was 131% which was significantly above the minimum regulatory",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\nThe deposit funding ratio represents the\nThe liquidity coverage ratio (LCR)\nfunding ratio\nproportion of total funding made up of\nrepresents the level of high quality liquid\ncustomer deposits. Customer deposits\nassets available to meet short-term\nREPORT\n75%\nare considered the most stable source\nobligations in a liquidity stress scenario.\nof funding. The strength of our banking\nThe Group’s average LCR for the quarter\nFY22 74%\nbusiness has allowed us to maintain\nended 30 June 2023 was 131% which was",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": [
+        "30",
+        "2023",
+        "131%"
+      ]
+    },
+    {
+      "id": "c_1611853ee00e3d4dd8547192",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        367.32,
+        641.17,
+        509.16,
+        649.7
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The net stable funding ratio (NSFR)",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\nThe Group’s average LCR for the quarter\nFY22 74%\nbusiness has allowed us to maintain\nended 30 June 2023 was 131% which was\nthe highest share of stable household\nsignificantly above the minimum regulatory\ndeposits in Australia. Ensuring we are well\nrequirement of 100%.\nADDITIONAL\nLiquidity\nfunded has been critical to our ability to\ncoverage ratio\nThe net stable funding ratio (NSFR)\ncontinue supporting our customers and the\nshows to what extent our long-term assets\nAustralian economy.",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_437ff8e82ac5908b17d79530",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        367.32,
+        672.66,
+        531.66,
+        681.16
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The Group’s NSFR as at 30 June 2023 was",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\nrequirement of 100%.\nADDITIONAL\nLiquidity\nfunded has been critical to our ability to\ncoverage ratio\nThe net stable funding ratio (NSFR)\ncontinue supporting our customers and the\nshows to what extent our long-term assets\nAustralian economy.\n131%\nare covered by stable sources of funding.\nThe Group continued to satisfy a significant\nThe Group’s NSFR as at 30 June 2023 was\nINFORMATION\nFY22 130%\nportion of its funding requirements",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": [
+        "30",
+        "2023"
+      ]
+    },
+    {
+      "id": "c_ee88147afc040d10fd4bfbda",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        367.32,
+        672.66,
+        531.66,
+        702.15
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The Group’s NSFR as at 30 June 2023 was 124%, remaining well above the regulatory minimum of 100%.",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\nrequirement of 100%.\nADDITIONAL\nLiquidity\nfunded has been critical to our ability to\ncoverage ratio\nThe net stable funding ratio (NSFR)\ncontinue supporting our customers and the\nshows to what extent our long-term assets\nAustralian economy.\n131%\nare covered by stable sources of funding.\nThe Group continued to satisfy a significant\nThe Group’s NSFR as at 30 June 2023 was\nINFORMATION\nFY22 130%\nportion of its funding requirements",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": [
+        "30",
+        "2023",
+        "124%",
+        "100%"
+      ]
+    },
+    {
+      "id": "c_b9975781aceddd5422f5fcba",
+      "document_id": "cba_2023",
+      "page": 57,
+      "bbox": [
+        56.69,
+        790.81,
+        534.99,
+        797.31
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "1 The adoption of APRA revised capital framework on 1 January 2023 led to an increase in CET1 ratio from 11.4% on 31 December 2022 to 12.1% on 1 January 2023.",
+      "context": "55\n2023 COMMONWEALTH\nANNUAL\nBalance Sheet strength\nREPORT\nBANK\nBalance Sheet strength is critical to our ability to serve our customers, drive core business outcomes\nand deliver sustainable returns for our shareholders. Our liquidity, funding and capital metrics remained\nstrong. The strength of our balance sheet means the Bank is well positioned to continue supporting our\nFY22 130%\nportion of its funding requirements\n124%, remaining well above the regulatory\nfrom customer deposits, accounting for\nminimum of 100%.\n75% of total funding, with customers\nNet stable\ncontinuing to increase retail, business\nfunding ratio\nand institutional deposits.\n124%\nFY22 130%\n1 The adoption of APRA revised capital framework on 1 January 2023 led to an increase in CET1 ratio from 11.4% on 31 December 2022 to 12.1% on 1 January 2023.\n2 The timing and actual number of shares purchased under the buy-back will depend on market conditions, available trading windows and other considerations.\nCBA reserves the right to vary, suspend or terminate the buy-back at any time.",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "1",
+        "2023",
+        "11.4%",
+        "31",
+        "2022",
+        "12.1%",
+        "1",
+        "2023"
+      ]
+    },
+    {
+      "id": "c_2fbabd0fc43de7b360632efa",
+      "document_id": "cba_2023",
+      "page": 194,
+      "bbox": [
+        56.64,
+        702.06,
+        538.67,
+        710.1
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "minimum operational risk capital requirements by an additional $1 billion (an impact to risk weighted assets of $12.5 billion) until such time",
+      "context": "192\nNotes to the financial statements\nFor the year ended 30 June 2023\n7.1\nProvisions (continued)\nRegulatory enforcement proceedings\nCommonwealth Essential Super proceedings\nOn 22 June 2020, the Australian Securities and Investments Commission (ASIC) commenced civil penalty proceedings against CFSIL\nand CBA in the Federal Court of Australia for alleged contraventions of the conflicted remuneration provisions in the Corporations Act\nIn addition to possible regulatory actions and reviews, there may also be financial exposure to claims by customers, third parties and\nshareholders and this could include further class actions, customer remediation or claims for compensation or other remedies. The\noutcomes and total costs associated with such regulatory actions and reviews, and possible claims remain uncertain.\nOther regulatory matters\nThe following matters were significant regulatory investigations and reviews, which have been completed, but have resulted in ongoing\naction required by the Group.\nPrudential inquiry into CBA and enforceable undertaking to APRA\nOn 28 August 2017, APRA announced it would establish an independent prudential inquiry (the Inquiry) into the Group focusing on the\ngovernance, culture and accountability frameworks and practices within the Group. The final report of the Inquiry was released on 1 May\n2018 (the Final Report). The Final Report made a number of findings regarding the complex interplay of organisational and cultural factors\nwithin the Group and the need for enhanced management of non-financial risks.\nIn response to the Final Report, the Group acknowledged that it would implement all of the recommendations and agreed to adjust its\nminimum operational risk capital requirements by an additional $1 billion (an impact to risk weighted assets of $12.5 billion) until such time\nas the recommendations are implemented to APRA’s satisfaction. CBA entered into an EU under which CBA’s remedial action (Remedial\nAction Plan) in response to the Final Report was agreed and monitored regularly by APRA.\nOn 20 November 2020, APRA reduced the operational risk capital overlay imposed on CBA from $1 billion to $500 million. Effective",
+      "metric_ids": [
+        "rwa"
+      ],
+      "numbers": [
+        "1",
+        "12.5"
+      ]
+    },
+    {
+      "id": "c_bb9de62b2db3ae971f8d03fc",
+      "document_id": "cba_2023",
+      "page": 197,
+      "bbox": [
+        56.67,
+        413.37,
+        538.63,
+        421.41
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Regulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of",
+      "context": "195\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n8.\nOur capital, equity and reserves\nBANK\nOVERVIEW\nThese requirements were revised by APRA, effective 1 January 2023, in order to increase the risk sensitivity within the capital framework,\nenhance the ability of ADIs to respond flexibly to future stress events, and to improve the comparability of the Australian framework with\ninternational standards.\nCREATING\nThe requirements define what is acceptable as capital and provide methods of measuring the risks incurred by the Bank.\nThe regulatory capital requirements are measured for the Extended Licenced Entity Group (known as “Level 1”, comprising the Bank and\nAPRA approved subsidiaries) and for the Bank and all of its banking subsidiaries, which includes ASB Bank (known as “Level 2” or the\nVALUE\n“Group”).\nAll entities which are consolidated for accounting purposes are included within the Group capital adequacy calculations except for:\n• insurance subsidiaries; and\n• certain entities through which securitisation of Group assets are conducted where such entities meet APRA’s capital relief requirements.\nRegulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of\nDIRECTORS’\nshareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with\nfeatures as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "c_64dbbb09966ba3aaaf0291ef",
+      "document_id": "cba_2023",
+      "page": 197,
+      "bbox": [
+        56.67,
+        413.37,
+        538.7,
+        441.33
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Regulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of shareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with features as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate",
+      "context": "195\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n8.\nOur capital, equity and reserves\nBANK\nOVERVIEW\nThese requirements were revised by APRA, effective 1 January 2023, in order to increase the risk sensitivity within the capital framework,\nenhance the ability of ADIs to respond flexibly to future stress events, and to improve the comparability of the Australian framework with\ninternational standards.\nCREATING\nThe requirements define what is acceptable as capital and provide methods of measuring the risks incurred by the Bank.\nThe regulatory capital requirements are measured for the Extended Licenced Entity Group (known as “Level 1”, comprising the Bank and\nAPRA approved subsidiaries) and for the Bank and all of its banking subsidiaries, which includes ASB Bank (known as “Level 2” or the\nVALUE\n“Group”).\nAll entities which are consolidated for accounting purposes are included within the Group capital adequacy calculations except for:\n• insurance subsidiaries; and\n• certain entities through which securitisation of Group assets are conducted where such entities meet APRA’s capital relief requirements.\nRegulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of\nDIRECTORS’\nshareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with\nfeatures as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "1",
+        "2",
+        "1",
+        "111",
+        "1"
+      ]
+    },
+    {
+      "id": "c_23ca407cebeb46cef3583bda",
+      "document_id": "cba_2023",
+      "page": 197,
+      "bbox": [
+        56.67,
+        443.37,
+        538.69,
+        451.41
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "of CET1 and Additional Tier 1 Capital. Tier 2 Capital is hybrid and debt instruments that fall short of necessary conditions to qualify as",
+      "context": "195\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n8.\nOur capital, equity and reserves\nBANK\nOVERVIEW\nThe requirements define what is acceptable as capital and provide methods of measuring the risks incurred by the Bank.\nThe regulatory capital requirements are measured for the Extended Licenced Entity Group (known as “Level 1”, comprising the Bank and\nAPRA approved subsidiaries) and for the Bank and all of its banking subsidiaries, which includes ASB Bank (known as “Level 2” or the\nVALUE\n“Group”).\nAll entities which are consolidated for accounting purposes are included within the Group capital adequacy calculations except for:\n• insurance subsidiaries; and\n• certain entities through which securitisation of Group assets are conducted where such entities meet APRA’s capital relief requirements.\nRegulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of\nDIRECTORS’\nshareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with\nfeatures as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate\nof CET1 and Additional Tier 1 Capital. Tier 2 Capital is hybrid and debt instruments that fall short of necessary conditions to qualify as\nAdditional Tier 1 to APRA. Total Capital is the aggregate of Tier 1 and Tier 2 Capital.\nREPORT\nCapital adequacy is measured by means of risk based capital ratios. The capital ratios reflect capital (CET1, Additional Tier 1, Tier 2 and",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "c_b93c4eba63bd6294d3d9b39d",
+      "document_id": "cba_2023",
+      "page": 197,
+      "bbox": [
+        56.66,
+        443.37,
+        538.69,
+        461.49
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "of CET1 and Additional Tier 1 Capital. Tier 2 Capital is hybrid and debt instruments that fall short of necessary conditions to qualify as Additional Tier 1 to APRA. Total Capital is the aggregate of Tier 1 and Tier 2 Capital.",
+      "context": "195\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n8.\nOur capital, equity and reserves\nBANK\nOVERVIEW\nThe requirements define what is acceptable as capital and provide methods of measuring the risks incurred by the Bank.\nThe regulatory capital requirements are measured for the Extended Licenced Entity Group (known as “Level 1”, comprising the Bank and\nAPRA approved subsidiaries) and for the Bank and all of its banking subsidiaries, which includes ASB Bank (known as “Level 2” or the\nVALUE\n“Group”).\nAll entities which are consolidated for accounting purposes are included within the Group capital adequacy calculations except for:\n• insurance subsidiaries; and\n• certain entities through which securitisation of Group assets are conducted where such entities meet APRA’s capital relief requirements.\nRegulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of\nDIRECTORS’\nshareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with\nfeatures as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate\nof CET1 and Additional Tier 1 Capital. Tier 2 Capital is hybrid and debt instruments that fall short of necessary conditions to qualify as\nAdditional Tier 1 to APRA. Total Capital is the aggregate of Tier 1 and Tier 2 Capital.\nREPORT\nCapital adequacy is measured by means of risk based capital ratios. The capital ratios reflect capital (CET1, Additional Tier 1, Tier 2 and",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "2",
+        "1",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "c_eed4e7f843da9d10657ef178",
+      "document_id": "cba_2023",
+      "page": 197,
+      "bbox": [
+        56.67,
+        468.33,
+        538.77,
+        476.37
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Capital adequacy is measured by means of risk based capital ratios. The capital ratios reflect capital (CET1, Additional Tier 1, Tier 2 and",
+      "context": "195\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n8.\nOur capital, equity and reserves\nBANK\nOVERVIEW\nVALUE\n“Group”).\nAll entities which are consolidated for accounting purposes are included within the Group capital adequacy calculations except for:\n• insurance subsidiaries; and\n• certain entities through which securitisation of Group assets are conducted where such entities meet APRA’s capital relief requirements.\nRegulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of\nDIRECTORS’\nshareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with\nfeatures as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate\nof CET1 and Additional Tier 1 Capital. Tier 2 Capital is hybrid and debt instruments that fall short of necessary conditions to qualify as\nAdditional Tier 1 to APRA. Total Capital is the aggregate of Tier 1 and Tier 2 Capital.\nREPORT\nCapital adequacy is measured by means of risk based capital ratios. The capital ratios reflect capital (CET1, Additional Tier 1, Tier 2 and\nTotal Capital) as a percentage of total Risk Weighted Assets (RWA). RWA represents an allocation of risks associated with the Group’s\nassets and other related exposures.\nThe Group has a range of instruments and methodologies available to effectively manage capital. These include share issues and buy-",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "c_542a2aa85a572b33e2faf747",
+      "document_id": "cba_2023",
+      "page": 197,
+      "bbox": [
+        56.67,
+        478.29,
+        538.61,
+        486.33
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Total Capital) as a percentage of total Risk Weighted Assets (RWA). RWA represents an allocation of risks associated with the Group’s",
+      "context": "195\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n8.\nOur capital, equity and reserves\nBANK\nOVERVIEW\n“Group”).\nAll entities which are consolidated for accounting purposes are included within the Group capital adequacy calculations except for:\n• insurance subsidiaries; and\n• certain entities through which securitisation of Group assets are conducted where such entities meet APRA’s capital relief requirements.\nRegulatory capital is divided into Common Equity Tier 1 (CET1), Additional Tier 1 Capital and Tier 2 Capital. CET1 primarily consists of\nDIRECTORS’\nshareholders’ equity, less goodwill and other prescribed adjustments. Additional Tier 1 Capital is comprised of certain securities with\nfeatures as described in APRA’s prudential standard APS 111 “Capital Adequacy: Measurement of Capital”. Tier 1 capital is the aggregate\nof CET1 and Additional Tier 1 Capital. Tier 2 Capital is hybrid and debt instruments that fall short of necessary conditions to qualify as\nAdditional Tier 1 to APRA. Total Capital is the aggregate of Tier 1 and Tier 2 Capital.\nREPORT\nCapital adequacy is measured by means of risk based capital ratios. The capital ratios reflect capital (CET1, Additional Tier 1, Tier 2 and\nTotal Capital) as a percentage of total Risk Weighted Assets (RWA). RWA represents an allocation of risks associated with the Group’s\nassets and other related exposures.\nThe Group has a range of instruments and methodologies available to effectively manage capital. These include share issues and buy-\nbacks, dividend and DRP policies, hybrid capital raising and subordinated loan capital issuances. All major capital related initiatives require",
+      "metric_ids": [
+        "rwa"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_d33438fa9df2a79f59b49463",
+      "document_id": "cba_2023",
+      "page": 210,
+      "bbox": [
+        326.02,
+        372.07,
+        535.89,
+        380.11
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Liquidity Coverage Ratio (LCR) and Net Stable Funding",
+      "context": "208\nNotes to the financial statements\nFor the year ended 30 June 2023\n9.1\nRisk management framework (continued)\nGoverning Policies and\nKey Management\nDescription\nCommittees\n• Maintaining sufficient liquidity buffers and short-term funding\n• ALCO\ncapacity to withstand periods of disruption in long-term\nwholesale funding markets and unanticipated changes in\nthe Balance Sheet funding gap;\n• Limiting the portion of wholesale funding sourced from\noffshore;\n• Conservatively managing the mismatch between asset and\nliability maturities;\n• Maintaining a conservative mix of readily saleable or repo-\neligible liquid assets;\n• Daily monitoring of liquidity risk exposures, including\nLiquidity Coverage Ratio (LCR) and Net Stable Funding\nRatio (NSFR);\n• Market and idiosyncratic stress test scenarios; and\n• The Contingency Funding Plan providing strategies for",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_611762f45c5c86a3bf393373",
+      "document_id": "cba_2023",
+      "page": 210,
+      "bbox": [
+        326.02,
+        382.03,
+        376.37,
+        390.06
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Ratio (NSFR);",
+      "context": "208\nNotes to the financial statements\nFor the year ended 30 June 2023\n9.1\nRisk management framework (continued)\nGoverning Policies and\nKey Management\nDescription\nCommittees\n• ALCO\ncapacity to withstand periods of disruption in long-term\nwholesale funding markets and unanticipated changes in\nthe Balance Sheet funding gap;\n• Limiting the portion of wholesale funding sourced from\noffshore;\n• Conservatively managing the mismatch between asset and\nliability maturities;\n• Maintaining a conservative mix of readily saleable or repo-\neligible liquid assets;\n• Daily monitoring of liquidity risk exposures, including\nLiquidity Coverage Ratio (LCR) and Net Stable Funding\nRatio (NSFR);\n• Market and idiosyncratic stress test scenarios; and\n• The Contingency Funding Plan providing strategies for\naddressing liquidity shortfalls in a crisis situation.",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_b07b76189aafe320c0ef4b92",
+      "document_id": "cba_2023",
+      "page": 233,
+      "bbox": [
+        56.64,
+        396.78,
+        538.72,
+        405.66
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "• an excess of liquid assets over the minimum prescribed under APRA’s Liquidity Coverage Ratio (LCR) requirement is maintained.",
+      "context": "231\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n9.4\nLiquidity and funding risk\nBANK\nOVERVIEW\nwith APRA. The Group Asset and Liability Committee’s (ALCO) responsibilities include asset and liability management, reviewing liquidity\nand funding policies and strategies, and monitoring compliance with those policies across the Group. Group Treasury manages the\nGroup’s liquidity and funding positions in accordance with the Group’s Liquidity Policy and supporting standards, and has ultimate authority\nto execute liquidity and funding decisions should the Group Contingency Funding Plan be activated. Risk Management provides oversight\nCREATING\nof the Group’s liquidity and funding risks, compliance with Group policies and manages the Group’s relationship with prudential regulators.\nSubsidiaries within the Group apply their own liquidity and funding strategies to address their specific needs. The Group’s New Zealand\nbanking subsidiary, ASB, manages its own domestic liquidity and funding needs in accordance with its own liquidity policy and the policies\nof the Group. ASB’s liquidity policy is also overseen by the RBNZ.\nVALUE\nLiquidity and funding policies and management\nThe Group’s liquidity and funding policies provide that:\n• an excess of liquid assets over the minimum prescribed under APRA’s Liquidity Coverage Ratio (LCR) requirement is maintained.\nAustralian ADIs are required to meet a 100% LCR, calculated as the ratio of high quality liquid assets to 30 day net cash outflows\nprojected under a prescribed stress scenario;\nDIRECTORS’",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_96a2419d9c8dc0de62d57a7c",
+      "document_id": "cba_2023",
+      "page": 233,
+      "bbox": [
+        65.16,
+        407.59,
+        538.58,
+        415.62
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Australian ADIs are required to meet a 100% LCR, calculated as the ratio of high quality liquid assets to 30 day net cash outflows",
+      "context": "231\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n9.4\nLiquidity and funding risk\nBANK\nOVERVIEW\nand funding policies and strategies, and monitoring compliance with those policies across the Group. Group Treasury manages the\nGroup’s liquidity and funding positions in accordance with the Group’s Liquidity Policy and supporting standards, and has ultimate authority\nto execute liquidity and funding decisions should the Group Contingency Funding Plan be activated. Risk Management provides oversight\nCREATING\nof the Group’s liquidity and funding risks, compliance with Group policies and manages the Group’s relationship with prudential regulators.\nSubsidiaries within the Group apply their own liquidity and funding strategies to address their specific needs. The Group’s New Zealand\nbanking subsidiary, ASB, manages its own domestic liquidity and funding needs in accordance with its own liquidity policy and the policies\nof the Group. ASB’s liquidity policy is also overseen by the RBNZ.\nVALUE\nLiquidity and funding policies and management\nThe Group’s liquidity and funding policies provide that:\n• an excess of liquid assets over the minimum prescribed under APRA’s Liquidity Coverage Ratio (LCR) requirement is maintained.\nAustralian ADIs are required to meet a 100% LCR, calculated as the ratio of high quality liquid assets to 30 day net cash outflows\nprojected under a prescribed stress scenario;\nDIRECTORS’\n• a surplus of stable funding from various sources, as measured by APRA’s Net Stable Funding Ratio (NSFR), is maintained. The NSFR",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": [
+        "100%",
+        "30"
+      ]
+    },
+    {
+      "id": "c_a492428ef8a4e89432b005ae",
+      "document_id": "cba_2023",
+      "page": 233,
+      "bbox": [
+        56.64,
+        429.54,
+        538.55,
+        438.42
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "• a surplus of stable funding from various sources, as measured by APRA’s Net Stable Funding Ratio (NSFR), is maintained. The NSFR",
+      "context": "231\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n9.4\nLiquidity and funding risk\nBANK\nOVERVIEW\nCREATING\nof the Group’s liquidity and funding risks, compliance with Group policies and manages the Group’s relationship with prudential regulators.\nSubsidiaries within the Group apply their own liquidity and funding strategies to address their specific needs. The Group’s New Zealand\nbanking subsidiary, ASB, manages its own domestic liquidity and funding needs in accordance with its own liquidity policy and the policies\nof the Group. ASB’s liquidity policy is also overseen by the RBNZ.\nVALUE\nLiquidity and funding policies and management\nThe Group’s liquidity and funding policies provide that:\n• an excess of liquid assets over the minimum prescribed under APRA’s Liquidity Coverage Ratio (LCR) requirement is maintained.\nAustralian ADIs are required to meet a 100% LCR, calculated as the ratio of high quality liquid assets to 30 day net cash outflows\nprojected under a prescribed stress scenario;\nDIRECTORS’\n• a surplus of stable funding from various sources, as measured by APRA’s Net Stable Funding Ratio (NSFR), is maintained. The NSFR\nis calculated by applying factors prescribed by APRA to assets and liabilities to determine a ratio of required stable funding to available\nstable funding which must be greater than 100%;\n• scenario analysis is central to the Group’s liquidity management framework and the Group undertakes additional stress testing including",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_f4092d2e98cacf04f1956660",
+      "document_id": "cba_2023",
+      "page": 233,
+      "bbox": [
+        56.64,
+        429.54,
+        538.77,
+        458.47
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "• a surplus of stable funding from various sources, as measured by APRA’s Net Stable Funding Ratio (NSFR), is maintained. The NSFR is calculated by applying factors prescribed by APRA to assets and liabilities to determine a ratio of required stable funding to available stable funding which must be greater than 100%;",
+      "context": "231\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n9.4\nLiquidity and funding risk\nBANK\nOVERVIEW\nCREATING\nof the Group’s liquidity and funding risks, compliance with Group policies and manages the Group’s relationship with prudential regulators.\nSubsidiaries within the Group apply their own liquidity and funding strategies to address their specific needs. The Group’s New Zealand\nbanking subsidiary, ASB, manages its own domestic liquidity and funding needs in accordance with its own liquidity policy and the policies\nof the Group. ASB’s liquidity policy is also overseen by the RBNZ.\nVALUE\nLiquidity and funding policies and management\nThe Group’s liquidity and funding policies provide that:\n• an excess of liquid assets over the minimum prescribed under APRA’s Liquidity Coverage Ratio (LCR) requirement is maintained.\nAustralian ADIs are required to meet a 100% LCR, calculated as the ratio of high quality liquid assets to 30 day net cash outflows\nprojected under a prescribed stress scenario;\nDIRECTORS’\n• a surplus of stable funding from various sources, as measured by APRA’s Net Stable Funding Ratio (NSFR), is maintained. The NSFR\nis calculated by applying factors prescribed by APRA to assets and liabilities to determine a ratio of required stable funding to available\nstable funding which must be greater than 100%;\n• scenario analysis is central to the Group’s liquidity management framework and the Group undertakes additional stress testing including",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": [
+        "100%"
+      ]
+    },
+    {
+      "id": "c_bed3491d4a9407172e992eba",
+      "document_id": "cba_2023",
+      "page": 233,
+      "bbox": [
+        65.17,
+        580.38,
+        538.67,
+        588.42
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "value of 30% of Group net cash outflows as defined under the LCR), which are mortgages that have been securitised but retained by",
+      "context": "231\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n9.4\nLiquidity and funding risk\nBANK\nOVERVIEW\nREPORT\nmarket specific and idiosyncratic scenarios over and above the regulatory defined scenarios;\n• additional funding and liquidity metrics are calculated and monitored as early warning indicators of a potential stress event;\n• short and long-term wholesale funding limits are established, monitored and reviewed regularly;\n• the Group’s wholesale funding market capacity is regularly assessed and used as a factor in funding strategies;\n• Group Treasury maintains a portfolio of highly liquid assets to meet liquidity requirements under a range of market conditions. The liquid\nFINANCIAL\nasset portfolio includes cash and liquid assets, including government and Australian semi-government securities, meeting APRA’s High\nQuality Liquid Asset (HQLA) definition and other highly liquid assets which are repo-eligible with the Reserve Bank of Australia (RBA);\n• liquid assets are held in Australian dollar and foreign currency denominated securities in accordance with expected requirements;\n• in line with APRA’s requirements to hold adequate levels of self-securitised assets, the Group also holds internal RMBS (minimum\nREPORT\nvalue of 30% of Group net cash outflows as defined under the LCR), which are mortgages that have been securitised but retained by\nthe Bank, that are repo-eligible with the RBA under the Exceptional Liquidity Assistance (ELA) arrangement; and\n• offshore branches and subsidiaries adhere to liquidity policies and hold appropriate foreign currency liquid assets to meet required\nregulations. Material banking subsidiaries are required to maintain an LCR of at least 100%;",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": [
+        "30%"
+      ]
+    },
+    {
+      "id": "c_5db5f8bcd6e72fe816bfdc3a",
+      "document_id": "cba_2023",
+      "page": 233,
+      "bbox": [
+        65.17,
+        613.27,
+        389.86,
+        621.3
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "regulations. Material banking subsidiaries are required to maintain an LCR of at least 100%;",
+      "context": "231\nNotes to the financial statements 2023 COMMONWEALTH\nFor the year ended 30 June 2023\nANNUAL\nREPORT\n9.4\nLiquidity and funding risk\nBANK\nOVERVIEW\n• short and long-term wholesale funding limits are established, monitored and reviewed regularly;\n• the Group’s wholesale funding market capacity is regularly assessed and used as a factor in funding strategies;\n• Group Treasury maintains a portfolio of highly liquid assets to meet liquidity requirements under a range of market conditions. The liquid\nFINANCIAL\nasset portfolio includes cash and liquid assets, including government and Australian semi-government securities, meeting APRA’s High\nQuality Liquid Asset (HQLA) definition and other highly liquid assets which are repo-eligible with the Reserve Bank of Australia (RBA);\n• liquid assets are held in Australian dollar and foreign currency denominated securities in accordance with expected requirements;\n• in line with APRA’s requirements to hold adequate levels of self-securitised assets, the Group also holds internal RMBS (minimum\nREPORT\nvalue of 30% of Group net cash outflows as defined under the LCR), which are mortgages that have been securitised but retained by\nthe Bank, that are repo-eligible with the RBA under the Exceptional Liquidity Assistance (ELA) arrangement; and\n• offshore branches and subsidiaries adhere to liquidity policies and hold appropriate foreign currency liquid assets to meet required\nregulations. Material banking subsidiaries are required to maintain an LCR of at least 100%;\nThe Group’s key funding tools include:\nADDITIONAL\n• consumer retail funding base, which includes a wide range of retail transaction accounts, savings accounts and term deposits for",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": [
+        "100%"
+      ]
+    },
+    {
+      "id": "c_758a4382c5b36f79173586cd",
+      "document_id": "cba_2023",
+      "page": 287,
+      "bbox": [
+        58.72,
+        551.07,
+        540.27,
+        559.62
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Risk weighted assets – Basel III (APRA) 467,992 497,892 450,680 454,948 452,762",
+      "context": "285\nFive-year financial summary\n2023 COMMONWEALTH\nANNUAL\nREPORT\nBANK\n30 Jun 23 30 Jun 22 1 30 Jun 21 1 30 Jun 20 30 Jun 19\n$M $M $M $M $M\nNet interest income 23,056 19,473 19,302 19,015 18,224\nDIRECTORS’\nCorporate Centre and Other (1,354) (651) (970) (818) (783)\nNet profit after tax from continuing operations (\"cash basis\") 10,164 9,595 8,653 7,225 8,174\nBalance Sheet\nREPORT\nLoans and other receivables 926,082 878,854 811,356 772,980 756,553\nTotal assets 1,252,845 1,215,260 1,091,975 1,015,484 977,896\nDeposits and other public borrowings 864,995 857,586 766,381 703,432 637,420\nTotal liabilities 1,180,840 1,142,422 1,013,287 943,576 908,280\nShareholders' Equity 72,005 72,838 78,688 71,908 69,616\nFINANCIAL\nNet tangible assets (including discontinued operations) 64,607 65,899 71,041 64,307 59,547\nRisk weighted assets – Basel III (APRA) 467,992 497,892 450,680 454,948 452,762\nAverage interest earning assets 1,111,254 1,026,910 929,846 897,409 871,418\nREPORT\nAverage interest bearing liabilities 918,666 841,695 776,967 771,982 761,115",
+      "metric_ids": [
+        "rwa"
+      ],
+      "numbers": [
+        "467,992",
+        "497,892",
+        "450,680",
+        "454,948",
+        "452,762"
+      ]
+    },
+    {
+      "id": "c_4cbb0b7796d503cd484d1e5e",
+      "document_id": "cba_2023",
+      "page": 289,
+      "bbox": [
+        58.89,
+        319.52,
+        539.97,
+        328.06
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Capital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.2 11.5 13.1 11.6 10.7",
+      "context": "287\nFive-year financial summary (continued) 2023 COMMONWEALTH\nANNUAL\nREPORT\n30 Jun 23 30 Jun 22 1 30 Jun 21 1 30 Jun 20 30 Jun 19\nBANK\nPerformance ratios from continuing operations\nReturn on average Shareholders' Equity\nStatutory (%) 14.1 12.8 11.8 10.4 11.8\nStatutory (%) 0.8 0.8 0.9 0.7 0.8\nCash basis (%) 0.8 0.8 0.8 0.7 0.8\nNet interest margin (%) 2.07 1.90 2.08 2.12 2.09\nOVERVIEW\nPerformance ratios including discontinued operations\nReturn on average Shareholders' Equity\nStatutory (%) 13.9 14.3 13.5 13.5 12.6\nCash basis (%) 14.1 12.9 11.7 10.5 12.8\nReturn on average total assets\nStatutory (%) 0.8 0.9 1.0 1.0 0.9\nCash basis (%) 0.8 0.8 0.8 0.7 0.9\nCREATING\nCapital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.2 11.5 13.1 11.6 10.7\nCapital adequacy – Tier 1 – Basel III (APRA) (%) 14.5 13.6 15.7 13.9 12.7\nCapital adequacy – Tier 2 – Basel III (APRA) (%) 5.5 4.0 4.1 3.6 2.8\nVALUE",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1",
+        "12.2",
+        "11.5",
+        "13.1",
+        "11.6",
+        "10.7"
+      ]
+    },
+    {
+      "id": "c_51937be3344e45e7d7705024",
+      "document_id": "cba_2023",
+      "page": 289,
+      "bbox": [
+        58.9,
+        359.18,
+        539.98,
+        367.72
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Capital adequacy – Total – Basel III (APRA) (%) 20.0 17.6 19.8 17.5 15.5",
+      "context": "287\nFive-year financial summary (continued) 2023 COMMONWEALTH\nANNUAL\nREPORT\n30 Jun 23 30 Jun 22 1 30 Jun 21 1 30 Jun 20 30 Jun 19\nBANK\nPerformance ratios from continuing operations\nReturn on average Shareholders' Equity\nStatutory (%) 14.1 12.8 11.8 10.4 11.8\nPerformance ratios including discontinued operations\nReturn on average Shareholders' Equity\nStatutory (%) 13.9 14.3 13.5 13.5 12.6\nCash basis (%) 14.1 12.9 11.7 10.5 12.8\nReturn on average total assets\nStatutory (%) 0.8 0.9 1.0 1.0 0.9\nCash basis (%) 0.8 0.8 0.8 0.7 0.9\nCREATING\nCapital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.2 11.5 13.1 11.6 10.7\nCapital adequacy – Tier 1 – Basel III (APRA) (%) 14.5 13.6 15.7 13.9 12.7\nCapital adequacy – Tier 2 – Basel III (APRA) (%) 5.5 4.0 4.1 3.6 2.8\nVALUE\nCapital adequacy – Total – Basel III (APRA) (%) 20.0 17.6 19.8 17.5 15.5\nLeverage Ratio Basel III (APRA) (%) 5.1 5.2 6.0 5.9 5.6\nLiquidity Coverage Ratio – \"Quarterly average\" (%) 131 1 30 1 29 1 55 1 32\nNet interest margin (%) 2.07 1.90 2.08 2.12 2.10",
+      "metric_ids": [
+        "total_capital_ratio"
+      ],
+      "numbers": [
+        "20.0",
+        "17.6",
+        "19.8",
+        "17.5",
+        "15.5"
+      ]
+    },
+    {
+      "id": "c_1b6b1e47517f564f791c34d1",
+      "document_id": "cba_2023",
+      "page": 289,
+      "bbox": [
+        58.91,
+        385.62,
+        540.0,
+        394.16
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Liquidity Coverage Ratio – \"Quarterly average\" (%) 131 1 30 1 29 1 55 1 32",
+      "context": "287\nFive-year financial summary (continued) 2023 COMMONWEALTH\nANNUAL\nREPORT\n30 Jun 23 30 Jun 22 1 30 Jun 21 1 30 Jun 20 30 Jun 19\nBANK\nPerformance ratios from continuing operations\nReturn on average Shareholders' Equity\nStatutory (%) 14.1 12.8 11.8 10.4 11.8\nStatutory (%) 13.9 14.3 13.5 13.5 12.6\nCash basis (%) 14.1 12.9 11.7 10.5 12.8\nReturn on average total assets\nStatutory (%) 0.8 0.9 1.0 1.0 0.9\nCash basis (%) 0.8 0.8 0.8 0.7 0.9\nCREATING\nCapital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.2 11.5 13.1 11.6 10.7\nCapital adequacy – Tier 1 – Basel III (APRA) (%) 14.5 13.6 15.7 13.9 12.7\nCapital adequacy – Tier 2 – Basel III (APRA) (%) 5.5 4.0 4.1 3.6 2.8\nVALUE\nCapital adequacy – Total – Basel III (APRA) (%) 20.0 17.6 19.8 17.5 15.5\nLeverage Ratio Basel III (APRA) (%) 5.1 5.2 6.0 5.9 5.6\nLiquidity Coverage Ratio – \"Quarterly average\" (%) 131 1 30 1 29 1 55 1 32\nNet interest margin (%) 2.07 1.90 2.08 2.12 2.10\nOther information\nDIRECTORS’",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": [
+        "131",
+        "1",
+        "30",
+        "1",
+        "29",
+        "1",
+        "55",
+        "1",
+        "32"
+      ]
+    },
+    {
+      "id": "c_a9e759b3b9482ff3c9ef4af1",
+      "document_id": "cba_2023",
+      "page": 289,
+      "bbox": [
+        58.91,
+        385.62,
+        540.0,
+        420.61
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Liquidity Coverage Ratio – \"Quarterly average\" (%) 131 1 30 1 29 1 55 1 32 Net interest margin (%) 2.07 1.90 2.08 2.12 2.10 Other information",
+      "context": "287\nFive-year financial summary (continued) 2023 COMMONWEALTH\nANNUAL\nREPORT\n30 Jun 23 30 Jun 22 1 30 Jun 21 1 30 Jun 20 30 Jun 19\nBANK\nPerformance ratios from continuing operations\nReturn on average Shareholders' Equity\nStatutory (%) 14.1 12.8 11.8 10.4 11.8\nStatutory (%) 13.9 14.3 13.5 13.5 12.6\nCash basis (%) 14.1 12.9 11.7 10.5 12.8\nReturn on average total assets\nStatutory (%) 0.8 0.9 1.0 1.0 0.9\nCash basis (%) 0.8 0.8 0.8 0.7 0.9\nCREATING\nCapital adequacy – Common Equity Tier 1 – Basel III (APRA) (%) 12.2 11.5 13.1 11.6 10.7\nCapital adequacy – Tier 1 – Basel III (APRA) (%) 14.5 13.6 15.7 13.9 12.7\nCapital adequacy – Tier 2 – Basel III (APRA) (%) 5.5 4.0 4.1 3.6 2.8\nVALUE\nCapital adequacy – Total – Basel III (APRA) (%) 20.0 17.6 19.8 17.5 15.5\nLeverage Ratio Basel III (APRA) (%) 5.1 5.2 6.0 5.9 5.6\nLiquidity Coverage Ratio – \"Quarterly average\" (%) 131 1 30 1 29 1 55 1 32\nNet interest margin (%) 2.07 1.90 2.08 2.12 2.10\nOther information\nDIRECTORS’",
+      "metric_ids": [
+        "lcr"
+      ],
+      "numbers": [
+        "131",
+        "1",
+        "30",
+        "1",
+        "29",
+        "1",
+        "55",
+        "1",
+        "32",
+        "2.07",
+        "1.90",
+        "2.08",
+        "2.12",
+        "2.10"
+      ]
+    },
+    {
+      "id": "c_ef9bbf61ad89c11fe0cc168e",
+      "document_id": "cba_2023",
+      "page": 293,
+      "bbox": [
+        59.53,
+        254.51,
+        147.34,
+        263.01
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Common Equity Tier 1",
+      "context": "291\n2023 COMMONWEALTH\nANNUAL\nTerm\nDefinition\nREPORT\nCBA customers\nThe number of customers who have a relationship with the Commonwealth Bank of\nBANK\nAustralia, as at 30 June. A customer is defined as anyone who is currently associated\nwith an open account as either the owner, joint owner, trustee or primary cardholder.\nIncludes retail, non-retail customers and deceased estates. Accompanying sustainability\nperformance metric assured by PwC.\nClient\nA customer who is relationship managed by the Group’s Institutional or Business Bank with\nfinancing transactions $5 million or greater.\nCommBank app customers\nThe total number of customers that have logged into the CommBank mobile app at least\nOVERVIEW\nonce in the month of June, for years 2019-2023.\nCommon Equity Tier 1\nThe highest quality of capital available to the Group reflecting the permanent and\nCapital (CET1)\nunrestricted commitment of funds that are freely available to absorb losses. It comprises",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": [
+        "1"
+      ]
+    },
+    {
+      "id": "c_db30f6c98a26fb7e763137af",
+      "document_id": "cba_2023",
+      "page": 293,
+      "bbox": [
+        59.53,
+        265.01,
+        117.64,
+        273.51
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Capital (CET1)",
+      "context": "291\n2023 COMMONWEALTH\nANNUAL\nTerm\nDefinition\nREPORT\nCBA customers\nThe number of customers who have a relationship with the Commonwealth Bank of\nBANK\nwith an open account as either the owner, joint owner, trustee or primary cardholder.\nIncludes retail, non-retail customers and deceased estates. Accompanying sustainability\nperformance metric assured by PwC.\nClient\nA customer who is relationship managed by the Group’s Institutional or Business Bank with\nfinancing transactions $5 million or greater.\nCommBank app customers\nThe total number of customers that have logged into the CommBank mobile app at least\nOVERVIEW\nonce in the month of June, for years 2019-2023.\nCommon Equity Tier 1\nThe highest quality of capital available to the Group reflecting the permanent and\nCapital (CET1)\nunrestricted commitment of funds that are freely available to absorb losses. It comprises\nordinary share capital, retained earnings and reserves less prescribed deductions.\nCommunity investment as a",
+      "metric_ids": [
+        "cet1_ratio"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_8b91dd20c141b21451fcbda9",
+      "document_id": "cba_2023",
+      "page": 300,
+      "bbox": [
+        59.53,
+        623.35,
+        157.41,
+        631.85
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "Net Stable Funding Ratio",
+      "context": "298\nGlossary of terms (continued)\nTerm\nDefinition\nLost time injury frequency\nLTIFR is the reported number of occurrences of lost time arising from injury or disease that\nrate (LTIFR)\nhave resulted in an accepted workers compensation claim, for each million hours worked by\nAustralia and New Zealand employees. The metric captures claims relating to permanent,\n(“statutory basis”)\nwith Australian Accounting Standards. This is equivalent to the statutory item “Net profit\nattributable to Equity holders of the Bank”.\nNet Promoter Score (NPS)\nFor the major banks, NPS is reported for main brand only. “Net Promoter®, NPS®, NPS\nPrism®, and the NPS-related emoticons are registered trademarks of Bain & Company,\nInc., NICE Systems, Inc., and Fred Reichheld. Net Promoter ScoreSM and Net Promoter\nSystemSM are service marks of Bain & Company, Inc., NICE Systems, Inc., and Fred\nReichheld.” NPS refers to customer likelihood to recommend their main financial institution\nusing a scale from 0–10 (where 0 is ‘Not at all likely’ and 10 is ‘Extremely likely) and NPS\nis calculated by subtracting the percentage of Detractors (scores 0–6) from the percentage\nof Promoters (scores 9–10).\nNet Stable Funding Ratio\nThe NSFR more closely aligns the behaviour terms of assets and liabilities. It is the ratio\n(NSFR)\nof the amount of available stable funding (ASF) to the amount of required stable funding",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_bc394fbdf2026936c30d1f13",
+      "document_id": "cba_2023",
+      "page": 300,
+      "bbox": [
+        187.09,
+        623.33,
+        518.34,
+        631.83
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "The NSFR more closely aligns the behaviour terms of assets and liabilities. It is the ratio",
+      "context": "298\nGlossary of terms (continued)\nTerm\nDefinition\nLost time injury frequency\nLTIFR is the reported number of occurrences of lost time arising from injury or disease that\nrate (LTIFR)\nhave resulted in an accepted workers compensation claim, for each million hours worked by\nAustralia and New Zealand employees. The metric captures claims relating to permanent,\nwith Australian Accounting Standards. This is equivalent to the statutory item “Net profit\nattributable to Equity holders of the Bank”.\nNet Promoter Score (NPS)\nFor the major banks, NPS is reported for main brand only. “Net Promoter®, NPS®, NPS\nPrism®, and the NPS-related emoticons are registered trademarks of Bain & Company,\nInc., NICE Systems, Inc., and Fred Reichheld. Net Promoter ScoreSM and Net Promoter\nSystemSM are service marks of Bain & Company, Inc., NICE Systems, Inc., and Fred\nReichheld.” NPS refers to customer likelihood to recommend their main financial institution\nusing a scale from 0–10 (where 0 is ‘Not at all likely’ and 10 is ‘Extremely likely) and NPS\nis calculated by subtracting the percentage of Detractors (scores 0–6) from the percentage\nof Promoters (scores 9–10).\nNet Stable Funding Ratio\nThe NSFR more closely aligns the behaviour terms of assets and liabilities. It is the ratio\n(NSFR)\nof the amount of available stable funding (ASF) to the amount of required stable funding\n(RSF). ASF is the portion of an Authorised Deposit-taking Institution’s (ADI) capital and",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": []
+    },
+    {
+      "id": "c_ea199c95995bb2f880247cee",
+      "document_id": "cba_2023",
+      "page": 300,
+      "bbox": [
+        59.53,
+        633.85,
+        88.1,
+        642.35
+      ],
+      "page_width": 595.276,
+      "page_height": 841.89,
+      "text": "(NSFR)",
+      "context": "298\nGlossary of terms (continued)\nTerm\nDefinition\nLost time injury frequency\nLTIFR is the reported number of occurrences of lost time arising from injury or disease that\nrate (LTIFR)\nhave resulted in an accepted workers compensation claim, for each million hours worked by\nAustralia and New Zealand employees. The metric captures claims relating to permanent,\nattributable to Equity holders of the Bank”.\nNet Promoter Score (NPS)\nFor the major banks, NPS is reported for main brand only. “Net Promoter®, NPS®, NPS\nPrism®, and the NPS-related emoticons are registered trademarks of Bain & Company,\nInc., NICE Systems, Inc., and Fred Reichheld. Net Promoter ScoreSM and Net Promoter\nSystemSM are service marks of Bain & Company, Inc., NICE Systems, Inc., and Fred\nReichheld.” NPS refers to customer likelihood to recommend their main financial institution\nusing a scale from 0–10 (where 0 is ‘Not at all likely’ and 10 is ‘Extremely likely) and NPS\nis calculated by subtracting the percentage of Detractors (scores 0–6) from the percentage\nof Promoters (scores 9–10).\nNet Stable Funding Ratio\nThe NSFR more closely aligns the behaviour terms of assets and liabilities. It is the ratio\n(NSFR)\nof the amount of available stable funding (ASF) to the amount of required stable funding\n(RSF). ASF is the portion of an Authorised Deposit-taking Institution’s (ADI) capital and\nliabilities expected to be a reliable source of funds over a one year time horizon. RSF",
+      "metric_ids": [
+        "nsfr"
+      ],
+      "numbers": []
+    }
+  ]
+}

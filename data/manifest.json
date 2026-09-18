@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cba_2023",
+    "bank": "CBA",
+    "year": 2023,
+    "url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2023-08/2023-annual-report_print.pdf",
+    "filename": "cba_2023.pdf",
+    "split": "development",
+    "sha256": "3a54093e85658d0f56bcb7a59ae2d4c28e11c366b1b679d06cdfc52a9aa39bca"
+  },
+  {
+    "id": "cba_2024",
+    "bank": "CBA",
+    "year": 2024,
+    "url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-2024-Annual-Report_print.pdf",
+    "filename": "cba_2024.pdf",
+    "split": "development",
+    "sha256": "181ef6e2683bad01f06551b97ae1f2b11b874e6c703d4760bdd11e92f41a625f"
+  },
+  {
+    "id": "cba_2025",
+    "bank": "CBA",
+    "year": 2025,
+    "url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-annual-report.pdf",
+    "filename": "cba_2025.pdf",
+    "split": "temporal_test",
+    "sha256": "6463ba4d4b8075be881e1e75d5ae1f86957080411198f94736384950b671c2bf"
+  },
+  {
+    "id": "westpac_2023",
+    "bank": "Westpac",
+    "year": 2023,
+    "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/WG-AnnualReport-2023.pdf",
+    "filename": "westpac_2023.pdf",
+    "split": "development",
+    "sha256": "7fc54a6a1f70bc43ba1428daaed7df4adcbd8ea3f3592a80a053131b144eb239"
+  },
+  {
+    "id": "westpac_2024",
+    "bank": "Westpac",
+    "year": 2024,
+    "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2024.pdf",
+    "filename": "westpac_2024.pdf",
+    "split": "development",
+    "sha256": "0007c64422eb3bff17ac64eb7d86eb36a1d620a3efde8eb01d2ab11af2c575c1"
+  },
+  {
+    "id": "westpac_2025",
+    "bank": "Westpac",
+    "year": 2025,
+    "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-annual-report-2025.pdf",
+    "filename": "westpac_2025.pdf",
+    "split": "temporal_test",
+    "sha256": "b57f4c5e4a9edfa7ca29ea1e0a9e076d13e44c7fec888c07d00eaccd5bee32e4"
+  },
+  {
+    "id": "anz_2023",
+    "bank": "ANZ",
+    "year": 2023,
+    "url": "https://www.anz.com/content/dam/anzcom/shareholder/2023-annual-report-accessibility-version.pdf",
+    "filename": "anz_2023.pdf",
+    "split": "development",
+    "sha256": "e4c748f3382522a9461f97590c1bff2a526cd7c9f10b94494ecaa0f03ba7c361"
+  },
+  {
+    "id": "anz_2024",
+    "bank": "ANZ",
+    "year": 2024,
+    "url": "https://www.anz.com/content/dam/anzcom/shareholder/ANZGHL-2024-Annual%20Report.pdf",
+    "filename": "anz_2024.pdf",
+    "split": "development",
+    "sha256": "57ee0908493317fe9cd3ad52dd09472870c6ded41fd45ff7794d165a9bc03b1a"
+  },
+  {
+    "id": "anz_2025",
+    "bank": "ANZ",
+    "year": 2025,
+    "url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-annual-report/anz-2025-annual-report.pdf",
+    "filename": "anz_2025.pdf",
+    "split": "temporal_test",
+    "sha256": "1842add20987de8fd33d29d6da3348ece77ccf6c86b32ea75fed6d13e0e9d442"
+  },
+  {
+    "id": "nab_2023",
+    "bank": "NAB",
+    "year": 2023,
+    "url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2023-annual-report.pdf",
+    "filename": "nab_2023.pdf",
+    "split": "bank_test",
+    "sha256": "7bc7532d644242fba9b21ce2237943d5708f384000bb30c44c892d6a135b160a"
+  },
+  {
+    "id": "nab_2024",
+    "bank": "NAB",
+    "year": 2024,
+    "url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf",
+    "filename": "nab_2024.pdf",
+    "split": "bank_test",
+    "sha256": "c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b"
+  },
+  {
+    "id": "nab_2025",
+    "bank": "NAB",
+    "year": 2025,
+    "url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+    "filename": "nab_2025.pdf",
+    "split": "bank_test",
+    "sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719"
+  }
+]

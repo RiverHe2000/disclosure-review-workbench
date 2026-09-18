@@ -1,0 +1,13 @@
+{
+  "checks_passed": [
+    "Real PDF loads with the selected fact's physical evidence page",
+    "Evidence coordinates track the original PDF at fit width and 150% zoom",
+    "Replacing the evidence candidate immediately selects and highlights its source",
+    "Upload dialog opens and cancels without changing the library",
+    "409 conflicts preserve the draft and require loading the latest review",
+    "390px layout has no page-level horizontal overflow",
+    "Comparison exposes five metric rows and actual comparability warnings"
+  ],
+  "browser_errors": [],
+  "production_mutations": 0
+}

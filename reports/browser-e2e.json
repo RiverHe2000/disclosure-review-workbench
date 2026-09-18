@@ -1,0 +1,89 @@
+{
+  "kind": "Scripted demonstration, not user research",
+  "source_store": "D:\\Project\\disclosure-review-workbench\\data\\workbench",
+  "demo_store": "D:\\Project\\disclosure-review-workbench\\output\\demo_workbench",
+  "production_review_mutations": 0,
+  "source_reviews_before": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "source_reviews_after": {
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "demo_reviews": [
+    {
+      "bank": "CBA",
+      "year": 2023,
+      "metric_id": "total_capital_ratio",
+      "value": 20.0,
+      "fact_id": "20e60c0bbe8a4676b7b92b14d5207cf0",
+      "version": 1,
+      "candidate_id": "c_51937be3344e45e7d7705024",
+      "evidence_page": 289
+    },
+    {
+      "bank": "CBA",
+      "year": 2023,
+      "metric_id": "lcr",
+      "value": 131.0,
+      "fact_id": "7aaad95e69c5429aa6c56d33fbdadd0d",
+      "version": 1,
+      "candidate_id": "c_1a4b13d9add2dc04f16f1281",
+      "evidence_page": 57
+    },
+    {
+      "bank": "CBA",
+      "year": 2023,
+      "metric_id": "nsfr",
+      "value": 124.0,
+      "fact_id": "489c1aaf8f1f47cab933589a85f83c39",
+      "version": 1,
+      "candidate_id": "c_ee88147afc040d10fd4bfbda",
+      "evidence_page": 57
+    },
+    {
+      "bank": "CBA",
+      "year": 2024,
+      "metric_id": "total_capital_ratio",
+      "value": 20.9,
+      "fact_id": "69483792851447ef9baed38958dce3f8",
+      "version": 1,
+      "candidate_id": "c_aab9aaa4168f2c093b101294",
+      "evidence_page": 311
+    },
+    {
+      "bank": "CBA",
+      "year": 2024,
+      "metric_id": "lcr",
+      "value": 136.0,
+      "fact_id": "abdf63cc91214198b794d1d9de0f7ae2",
+      "version": 1,
+      "candidate_id": "c_5f323e32c006d1c1451e33fe",
+      "evidence_page": 67
+    },
+    {
+      "bank": "CBA",
+      "year": 2024,
+      "metric_id": "nsfr",
+      "value": 116.0,
+      "fact_id": "b2e1453fc2464ef48426903e9f661190",
+      "version": 1,
+      "candidate_id": "c_61b68be99bf3eecf396187c4",
+      "evidence_page": 67
+    }
+  ],
+  "checks_passed": [
+    "All six review values use verified, source-review-assisted gold with a matching PDF hash, metric, physical page and source number",
+    "Six real versioned review POSTs accepted matching evidence and persisted explicit scripted-demonstration reasons in the isolated store",
+    "Pending warnings remain visible; accepted reviews show their saved reason and collapsed historical extraction notes, with reviewer-controlled wording",
+    "Browser and API both show +0.9 pp total capital, +5 pp LCR and -8 pp NSFR; two unreviewed rows remain blocked",
+    "Real browser CSV and Markdown downloads retain all five metrics, percentage-point units and the scripted review reason",
+    "Original data/workbench review history hash and count are unchanged"
+  ],
+  "browser_errors": [],
+  "duration_seconds": 66.52,
+  "recording": "D:\\Project\\disclosure-review-workbench\\output\\disclosure-desk-demo.webm",
+  "recording_bytes": 6099446,
+  "gold_annotation_method": "source_review_assisted; not independent human double review"
+}

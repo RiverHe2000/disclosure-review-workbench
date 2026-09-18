@@ -1,0 +1,21 @@
+{
+  "python": "3.12.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "fastapi": "0.141.1",
+    "starlette": "1.6.0",
+    "pydantic": "2.13.5",
+    "uvicorn": "0.52.4",
+    "httpx": "0.28.1",
+    "pdfplumber": "0.11.10",
+    "pdfminer.six": "20260107",
+    "pypdfium2": "5.13.0",
+    "pytest": "9.1.1",
+    "ruff": "0.16.6",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1"
+  },
+  "hardware": "NVIDIA RTX 4070, 12282 MiB (nvidia-smi verified)",
+  "model": "Qwen3-4B-Instruct-2507",
+  "data": "12 official annual reports, 2023-2025"
+}
